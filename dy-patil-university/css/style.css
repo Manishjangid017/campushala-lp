@@ -2730,7 +2730,7 @@ body {
   margin-bottom: 0;
 }
 
-.footer-bottom-credit a {
+.footer-bottom-credit span {
   color: #fcc926;
   font-weight: 700;
   text-decoration: none;
