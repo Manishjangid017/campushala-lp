@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/amity-university", "destination": "/amity-university/index.html" },
+    { "source": "/amity-university/(.*)", "destination": "/amity-university/$1" },
+    { "source": "/manipal-university", "destination": "/manipal-university/index.html" },
+    { "source": "/manipal-university/(.*)", "destination": "/manipal-university/$1" },
+    { "source": "/dy-patil-university", "destination": "/dy-patil-university/index.html" },
+    { "source": "/dy-patil-university/(.*)", "destination": "/dy-patil-university/$1" },
+    { "source": "/", "destination": "/dy-patil-university/index.html" }
+  ]
+}
