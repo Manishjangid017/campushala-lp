@@ -1,0 +1,1325 @@
+/* ── Section wrapper ── */
+.why-study-section {
+  background: #fafafa;
+  padding-block: 96px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* ── Max-width container ── */
+/* .why-study-container {
+  margin-inline: auto;
+  padding-inline: 16px;
+} */
+
+.jakarta-fonts {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* ── Heading block ── */
+.why-heading-wrap {
+  margin-bottom: 48px;
+}
+
+.why-study-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.why-study-subtext {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ================================================
+   3-COLUMN GRID
+   Left ~42% | Centre ~22% | Right ~36%
+   ================================================ */
+.why-grid {
+  display: grid;
+  grid-template-columns: 42fr 42fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* ── COL 1 : Left ── */
+.why-col-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── COL 2 : Centre ── */
+.why-col-center {
+  display: flex;
+  align-items: stretch;
+  border-radius: 24px;
+  border: 1px solid rgba(229, 229, 229, 0.9);
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  background: #fff;
+}
+
+/* ================================================
+   CARDS — shared
+   ================================================ */
+.why-card {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(229, 229, 229, 0.9);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* ================================================
+   CARD 1 — Flexible curriculum
+   ================================================ */
+.why-card-curriculum {
+  flex: 1;
+  /* fill remaining height in left col */
+  padding: 65px 32px;
+}
+
+.why-card-inner {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.why-card-text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 256px;
+}
+
+/* Badge */
+.why-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fff9f0;
+  border: 1px solid #f2dfc0;
+  border-radius: 20px;
+  padding: 6px 12px;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.why-badge-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.why-badge-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #7b3306;
+  line-height: 1.35;
+}
+
+/* Highlight text */
+.why-card-highlight {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.highlight-blue {
+  color: #0066cc;
+}
+
+.highlight-orange {
+  color: #f36f21;
+}
+
+/* Card 1 image */
+.why-card-img-wrap {
+  width: 222px;
+  min-width: 130px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.why-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================================================
+   BOTTOM ROW — Coursera + 24×7
+   ================================================ */
+.why-bottom-row {
+  display: flex;
+  gap: 16px;
+}
+
+.why-card-coursera,
+.why-card-247 {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: start;
+}
+
+.coursera-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
+.why-card-small-text {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  color: #262626;
+  line-height: 1.55;
+  margin: 0;
+  font-weight: 600;
+}
+
+.why-stat-number {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #06c;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ================================================
+   COL 2 — Portrait image with mint pill bg
+   ================================================ */
+.why-portrait-wrap {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 380px;
+  padding: 8px 16px;
+  max-width: 253px;
+  background: linear-gradient(180deg,
+      #eaf5ec 0%,
+      #e8f4ea 10%,
+      #e7f4e9 20%,
+      #e5f3e7 30%,
+      #e4f3e6 40%,
+      #e2f2e4 50%,
+      #dff1e2 60%,
+      #ddefdf 70%,
+      #daeedd 80%,
+      #d8ecda 90%,
+      #d5ebd8 100%);
+}
+
+.why-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+/* ================================================
+   COL 3 — Stats block
+   ================================================ */
+.why-stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.why-stat-big {
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  color: #0066cc;
+  line-height: 1;
+  margin: 0;
+}
+
+.why-stat-desc {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  color: #1a1a2e;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.why-stat-desc strong {
+  font-weight: 600;
+}
+
+.why-stat-sub {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #777;
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+
+.why-col-right {
+  padding: 36px;
+}
+
+.why-cta-link {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0066cc;
+  border-top: 1px solid #F5F5F5;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+
+.why-cta-link:hover {
+  color: #004fa3;
+  gap: 10px;
+}
+
+.why-cta-link svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.why-cta-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* ================================================
+   RESPONSIVE
+   ================================================ */
+
+/* ── Tablet landscape ≤ 1024px ──
+   Keep 2-col grid, but shrink portrait min-height
+   and let why-col-center wrap portrait + stats
+   ------------------------------------------------ */
+@media (max-width: 1024px) {
+
+  .why-card-curriculum {
+    padding: 32px 24px;
+  }
+
+  .why-portrait-wrap {
+    min-height: 300px;
+    max-width: 200px;
+  }
+
+  .why-col-right {
+    padding: 24px 20px;
+  }
+}
+
+/* ── Tablet portrait ≤ 768px ──
+   Single-column stack; why-col-center switches to
+   column so portrait sits above the stats block
+   ------------------------------------------------ */
+@media (max-width: 768px) {
+  .why-heading-wrap {
+    margin-bottom: 28px;
+  }
+
+  .why-study-heading {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+
+  /* Single column */
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Curriculum card: image beside text (row) */
+  .why-card-curriculum {
+    padding: 24px 20px;
+  }
+
+  .why-card-inner {
+    align-items: center;
+  }
+
+  .why-card-img-wrap {
+    width: 160px;
+    min-width: 120px;
+    height: 160px;
+    align-self: stretch;
+  }
+
+  /* why-col-center: portrait on top, stats below */
+  .why-col-center {
+    flex-direction: column;
+  }
+
+  .why-portrait-wrap {
+    max-width: 100%;
+    min-height: 260px;
+    padding: 16px 40px 0;
+    align-items: flex-end;
+  }
+
+  .why-portrait-img {
+    max-height: 260px;
+    object-fit: contain;
+  }
+
+  .why-col-right {
+    padding: 24px 20px;
+    border-top: 1px solid rgba(229, 229, 229, 0.9);
+  }
+
+  .why-stat-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px 24px;
+  }
+
+  .why-stat-big {
+    flex-basis: 100%;
+    margin-bottom: 4px !important;
+  }
+
+  .why-stat-sub {
+    margin-bottom: 8px;
+  }
+}
+
+/* ── Mobile ≤ 480px ──
+   Tighten further; bottom row cards stack vertically
+   ------------------------------------------------ */
+@media (max-width: 480px) {
+  .why-study-heading {
+    font-size: 1.5rem;
+  }
+
+  .why-card-curriculum {
+    padding: 20px 16px;
+  }
+
+  /* On very small screens stack image below text */
+  .why-card-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .why-card-img-wrap {
+    width: 100%;
+    min-width: unset;
+    height: 200px;
+    align-self: auto;
+  }
+
+  /* Bottom row: Coursera + 24×7 stack */
+  .why-bottom-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .why-portrait-wrap {
+    min-height: 220px;
+    padding: 0;
+  }
+
+  .why-portrait-img {
+    max-height: 288px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .why-stat-block {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* ================================================
+   SCHOLARSHIPS & FINANCING SECTION
+   ================================================ */
+
+/* ── Section wrapper ── */
+.sch-section {
+  background: #fff;
+  padding-block: 80px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.sch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── Section heading ── */
+.sch-heading-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sch-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #999;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.badge-icon-box {
+  padding: 4px 12px;
+  border-radius: 33554400px;
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  background: #fff;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+
+}
+
+.badge-icon-box img {
+  width: 14px;
+  height: 14px;
+}
+
+.sch-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* ================================================
+   EMI CARD — left content + right image
+   ================================================ */
+.sch-emi-card {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Left: content pane */
+.sch-emi-content {
+  flex: 1;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Pills row */
+.sch-emi-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sch-pill-orange {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: #fff3e8;
+  color: #c45000;
+  border: 1px solid #f5c59a;
+  border-radius: 20px;
+  padding: 4px 10px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.sch-pill-sep {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1;
+}
+
+.sch-pill-plain {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Icon + title row */
+.sch-emi-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.badge-icon-box {}
+
+.sch-emi-icon-wrap {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(243, 111, 33, 0.2);
+  background: rgba(243, 111, 33, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.sch-emi-icon-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  /* placeholder colour when src is empty */
+  border-radius: 4px;
+}
+
+.sch-emi-title {
+  font-family: 'Playfair Display';
+  font-size: 26px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Description */
+.sch-emi-desc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* 3 bordered badge items */
+.sch-emi-badges {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+.sch-badge {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(229, 229, 229, 0.7);
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a2e;
+  background: #fafafa;
+  white-space: nowrap;
+}
+
+.sch-badge-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+  /* placeholder */
+  border-radius: 50%;
+}
+
+/* CTA link */
+.sch-emi-cta {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f36f21;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+  margin-top: 4px;
+}
+
+.sch-emi-cta:hover {
+  color: #c85500;
+  gap: 10px;
+}
+
+.sch-emi-cta svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.sch-emi-cta:hover svg {
+  transform: translateX(3px);
+}
+
+/* Right: image pane */
+.sch-emi-img-wrap {
+  flex: 0 0 42%;
+  max-width: 42%;
+  overflow: hidden;
+}
+
+.sch-emi-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  min-height: 320px;
+}
+
+/* ================================================
+   SCHOLARSHIP SCHEME — below EMI card
+   ================================================ */
+.sch-scheme-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Scheme heading row */
+.sch-scheme-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sch-scheme-heading-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+  /* placeholder */
+}
+
+.sch-scheme-heading {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ── 3 × 2 tiles grid ── */
+.sch-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Each tile: horizontal row — body left, badge right */
+.sch-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid rgba(229, 229, 229, 0.9);
+  border-radius: 16px;
+  padding: 32px 24px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.sch-tile:hover {
+  border-color: rgba(243, 111, 33, 0.4);
+  background: rgba(255, 247, 237, 0.5);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.sch-tile:hover .sch-tile-badge {
+  color: #fff;
+  border: 1px solid #f36f21;
+  background: #f36f21;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+.sch-tile:hover .sch-tile-cat {
+  color: #f36f21;
+}
+
+.sch-tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.sch-tile-cat {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  line-height: 1.3;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+}
+
+.sch-tile-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.4;
+}
+
+/* Discount badge — default: outlined dark pill */
+.sch-tile-badge {
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  background: #f5f5f5;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 10px 14px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ── Note + Apply bar ── */
+.sch-note-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 14px 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+}
+
+.sch-note-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.sch-note-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.sch-note-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sch-note-text strong {
+  color: #1a1a2e;
+}
+
+/* Apply link */
+.sch-apply-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f36f21;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+
+.sch-apply-link:hover {
+  color: #c85500;
+  gap: 10px;
+}
+
+.sch-apply-link svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.sch-apply-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* ================================================
+   RESPONSIVE — Scholarships & Financing
+   ================================================ */
+
+/* ── Tablet landscape ≤ 1024px ── */
+@media (max-width: 1024px) {
+  .sch-emi-img-wrap {
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+
+  .sch-emi-content {
+    padding: 28px 28px;
+  }
+}
+
+/* ── Tablet portrait ≤ 768px ── */
+@media (max-width: 768px) {
+  .why-stat-number {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .sch-tile-badge {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  /* EMI card: stack image on top */
+  .sch-emi-card {
+    flex-direction: column-reverse;
+  }
+
+  .sch-emi-img-wrap {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .sch-emi-img {
+    min-height: 260px;
+    max-height: 260px;
+    object-position: center top;
+  }
+
+  .sch-emi-content {
+    padding: 24px 20px;
+  }
+
+  /* Tiles: 2 columns */
+  .sch-tiles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Note bar: stack on mobile */
+  .sch-note-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .sch-emi-title {
+    font-size: 22px;
+  }
+
+  .sch-emi-badges {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sch-badge {
+    width: auto;
+  }
+
+  .sch-emi-icon-wrap {
+    display: none;
+  }
+
+  .why-card-247 {
+    padding: 20px;
+  }
+
+  .why-card {
+    overflow: unset;
+  }
+
+  .why-card-text-side {
+    max-width: unset;
+  }
+}
+
+/* ── Mobile ≤ 480px ── */
+@media (max-width: 480px) {
+  .sch-heading {
+    font-size: 1.6rem;
+  }
+
+  .sch-emi-content {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .sch-emi-img {
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .sch-emi-badges {
+    gap: 8px;
+  }
+
+  .sch-badge {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .sch-tiles-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  .sch-tile {
+    padding: 24px 16px;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .sch-tile-badge {
+    align-self: flex-end;
+  }
+
+  .sch-tile-badge-fill {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .sch-note-bar {
+    padding: 12px 14px;
+  }
+}
+
+/* ================================================
+   RANKINGS & ACCREDITATIONS SECTION
+   ================================================ */
+
+.rankings-section {
+  background: #FAFAFA99;
+  padding-block: 80px;
+  border-bottom: 1px solid #E8E8E8
+}
+
+.rankings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── Header row: heading left, arrows right ── */
+.rankings-header {
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.rankings-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rankings-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #999;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rankings-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* ── Prev / Next arrow buttons ── */
+.rankings-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.rankings-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+
+.rankings-btn:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+.rankings-btn.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ── Swiper overrides ── */
+.rankings-swiper {
+  width: 100%;
+  overflow: hidden;
+  /* extra bottom space for pagination dots */
+  padding-bottom: 44px !important;
+}
+
+.rankings-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* ── Individual rank card ── */
+.rank-card {
+  position: relative;
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  border-radius: 16px;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  min-height: 220px;
+}
+
+.rank-card:hover {
+  border-color: rgba(243, 111, 33, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Orange "Ranked xxx" badge pinned to top-centre */
+.rank-card-badge {
+  background: #FFF2EA;
+  border: 1px solid #F36F2140;
+  border-radius: 33554400px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #F36F21;
+  padding: 3px 10px 4px;
+  white-space: nowrap;
+  line-height: 1.4;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+
+}
+
+/* Swiper Slide Equal Heights */
+.rankings-swiper .swiper-wrapper {
+  display: flex;
+}
+
+.rankings-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+/* Card Main Container */
+.rank-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 1. Badge Row Space (Har card me badge ka height area reserved rahega) */
+.rank-card-badge {
+  display: block;
+  min-height: 28px;
+}
+
+/* Badge Pseudo-class: Agar kisi HTML block me badge textual content blank na ho, tabhi background/border dikhe */
+.rank-card-badge:empty {
+  visibility: hidden;
+}
+
+.rank-card-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  /* Image crop nahi hogi aur original proportions me rahegi */
+}
+
+/* 3. Description Area */
+.rank-card-desc {
+  margin-top: auto;
+  /* Baaki bacchi hui space auto occupy karke bottom me text align dekhega */
+}
+
+/* Logo / image area */
+.rank-card-img-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #FAFAFAB2;
+  border: 1px solid #F5F5F5;
+  padding: 10px;
+  min-height: 90px;
+}
+
+.rank-card-img {
+  max-width: 120px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Description text */
+.rank-card-desc {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13.5px;
+  line-height: 18.56px;
+  text-align: center;
+  margin: 0;
+}
+
+/* ── Swiper pagination dots ── */
+.rankings-swiper .swiper-pagination,
+.about-img-carousel .swiper-pagination {
+  bottom: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.rankings-swiper .swiper-pagination-bullet,
+.about-img-carousel .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4d4d4;
+  opacity: 1;
+  margin: 0 !important;
+  transition:
+    background 0.2s ease,
+    width 0.25s ease,
+    border-radius 0.25s ease;
+}
+
+.rankings-swiper .swiper-pagination-bullet-active,
+.about-img-carousel .swiper-pagination-bullet-active {
+  background: #f36f21;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* ================================================
+   RESPONSIVE — Rankings & Accreditations
+   ================================================ */
+
+@media (max-width: 1024px) {
+
+  .rankings-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .rankings-section,
+  .sch-section,
+  .why-study-section {
+    padding: 60px 16px;
+  }
+
+  .rankings-heading {
+    font-size: 26px;
+  }
+
+  .rankings-container {
+    gap: 24px;
+  }
+
+  .rank-card-img {
+    max-width: 100px;
+    max-height: 76px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .rankings-heading {
+    font-size: 22px;
+  }
+
+  .rankings-header {
+    align-items: center;
+  }
+
+  .rank-card {
+    padding: 18px 12px;
+    min-height: 190px;
+  }
+
+  .rank-card-img {
+    max-width: 88px;
+    max-height: 68px;
+  }
+
+  .rank-card-desc {
+    font-size: 12px;
+  }
+}

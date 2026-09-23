@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Manipal Campushala</title>
+  <link rel="icon" type="image/webp" href="images/favicon.webp">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBZR5ZBN');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    :root {
+      --primary-color: #001C3D;
+      --secondary-color: #E2E8F0;
+      --tertiary-color: #002E5E;
+      --quaternary-color: #020618;
+      --quinary-color: #45556C;
+      --sixth-color: #1D293D;
+      --seventh-color: #FFCB04;
+      --eight-color: #90A1B9;
+      --nine-color: #CAD5E2;
+      --tenth-color: #111827;
+      --eleventh-color: #18234D;
+      --twenth-color: #1D4ED8;
+      --blue-color: #2563EB;
+      --orange-color: #E06D10;
+      --light-blue-color: #F1F5F9;
+      --transition: 0.35s ease;
+      --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+      --container: 1280px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: var(--light-blue-color);
+      color: var(--quinary-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    .bg-tertiary {
+      background-color: var(--tertiary-color) !important;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    /* ── HEADER ── */
+    .ty-header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--secondary-color);
+      padding: 18px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    .ty-header img {
+      height: 48px;
+      width: auto;
+      display: inline-block;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .ty-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ty-main::before {
+      content: '';
+      position: absolute;
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 46, 94, 0.08) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ty-card {
+      position: relative;
+      z-index: 1;
+      background: #ffffff;
+      border-radius: var(--radius);
+      border: 1px solid var(--secondary-color);
+      box-shadow: var(--shadow);
+      padding: 56px 48px;
+      max-width: 580px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ── CHECK ICON ── */
+    .ty-icon {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: var(--light-blue-color);
+      border: 2px solid var(--nine-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      animation: pop-in 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .ty-icon i {
+      font-size: 40px;
+      color: var(--blue-color);
+      line-height: 1;
+    }
+
+    @keyframes pop-in {
+      from {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* ── TAG LINE ── */
+    .ty-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--light-blue-color);
+      color: var(--tertiary-color);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid var(--nine-color);
+      margin-bottom: 24px;
+    }
+
+    .ty-tag .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--orange-color);
+      box-shadow: 0 0 8px var(--orange-color);
+    }
+
+    /* ── HEADING ── */
+    .ty-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--primary-color);
+      margin-bottom: 16px;
+    }
+
+    .ty-heading span {
+      color: var(--blue-color);
+    }
+
+    /* ── BODY TEXT ── */
+    .ty-body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      color: var(--quinary-color);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    /* ── DIVIDER ── */
+    .ty-divider {
+      width: 50px;
+      height: 4px;
+      background: var(--seventh-color);
+      border-radius: 30px;
+      margin: 0 auto 28px;
+    }
+
+    /* ── BACK BUTTON ── */
+    .ty-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 34px;
+      background: var(--tertiary-color);
+      color: #ffffff;
+      border-radius: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0, 46, 94, 0.2);
+      transition: var(--transition);
+    }
+
+    .ty-back-btn i {
+      font-size: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .ty-back-btn:hover {
+      background: var(--primary-color);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(0, 28, 61, 0.3);
+    }
+
+    .ty-back-btn:hover i {
+      transform: translateX(-4px);
+    }
+
+    /* ── FOOTER ── */
+    .ty-footer {
+      background: var(--quaternary-color);
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 3px solid var(--seventh-color);
+    }
+
+    .ty-footer-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 18px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    .ty-footer-logo img {
+      height: 36px;
+      width: auto;
+      display: inline-block;
+    }
+
+    .ty-footer-address {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      color: var(--eight-color);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .ty-footer-copy {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      color: var(--quinary-color);
+      margin: 0;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 767px) {
+      .ty-header img {
+        height: 40px;
+      }
+
+      .ty-card {
+        padding: 40px 24px;
+      }
+
+      .ty-icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 20px;
+      }
+
+      .ty-icon i {
+        font-size: 32px;
+      }
+
+      .ty-heading {
+        font-size: 30px;
+      }
+
+      .ty-body {
+        font-size: 15px;
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ty-card {
+        padding: 32px 18px;
+      }
+
+      .ty-heading {
+        font-size: 26px;
+      }
+
+      .ty-body {
+        font-size: 14px;
+      }
+
+      .ty-back-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZR5ZBN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- ── HEADER ── -->
+  <header class="ty-header bg-tertiary">
+    <a href="index.html" class="bg-white p-2">
+      <img src="./images/image 4.webp" alt="" />
+    </a>
+  </header>
+
+  <!-- ── MAIN ── -->
+  <main class="ty-main">
+    <div class="ty-card">
+      <!-- Check icon -->
+      <div class="ty-icon">
+        <i class="bi bi-check-lg"></i>
+      </div>
+
+      <!-- Tag -->
+      <div class="ty-tag">
+        <span class="dot"></span>
+        Submission Received
+      </div>
+
+      <!-- Heading -->
+      <h1 class="ty-heading">
+        Thank You for<br />
+        <span>Reaching Out!</span>
+      </h1>
+
+      <!-- Divider -->
+      <div class="ty-divider"></div>
+
+      <!-- Body -->
+      <p class="ty-body">
+        Thank you for your interest in Manipal University.<br />
+        Our admissions counsellor will contact you shortly to guide you through the next steps.<br />
+        Explore our world-class campus and programs in the meantime.
+      </p>
+
+      <!-- Action Button -->
+      <a href="index.html" class="ty-back-btn">
+        <i class="bi bi-arrow-left"></i> Back to Home
+      </a>
+    </div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="ty-footer">
+    <div class="ty-footer-logo">
+      <a href="index.html" class="bg-white p-2">
+        <img src="./images/image 4.webp" alt="" />
+      </a>
+    </div>
+    <p class="ty-footer-copy">© 2026 Universities Nation. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
