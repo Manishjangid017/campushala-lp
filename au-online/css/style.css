@@ -109,7 +109,8 @@ p {
   max-width: 768px !important;
 }
 
-.max-w-1024px {
+.max-w-1024px,
+.disclaimer-span {
   max-width: 1024px !important;
 
 }
@@ -490,7 +491,8 @@ p {
 .card-desc,
 .section-subtitle,
 .section-desc,
-.star-font {
+.star-font,
+.disclaimer-span {
   color: #1D293D;
   font-size: 14px;
   line-height: 20px;
