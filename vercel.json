@@ -1,8 +1,8 @@
 {
   "redirects": [
-    { "source": "/", "destination": "/dy-patil-university/", "permanent": false },
-    { "source": "/dy-patil-university", "destination": "/dy-patil-university/", "permanent": false },
-    { "source": "/amity-university", "destination": "/amity-university/", "permanent": false },
-    { "source": "/manipal-university", "destination": "/manipal-university/", "permanent": false }
+    { "source": "/", "destination": "/dpu-onilne/", "permanent": false },
+    { "source": "/dpu-online", "destination": "/dpu-online/", "permanent": false },
+    { "source": "/au-online", "destination": "/au-online/", "permanent": false },
+    { "source": "/mu-online", "destination": "/mu-online/", "permanent": false }
   ]
 }
