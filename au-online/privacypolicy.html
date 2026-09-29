@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Amity University Online</title>
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        :root {
+            --primary-color: #001C3D;
+            --secondary-color: #E2E8F0;
+            --tertiary-color: #002E5E;
+            --quaternary-color: #020618;
+            --quinary-color: #45556C;
+            --sixth-color: #1D293D;
+            --seventh-color: #FFCB04;
+            --eight-color: #90A1B9;
+            --nine-color: #CAD5E2;
+            --tenth-color: #111827;
+            --eleventh-color: #18234D;
+            --twenth-color: #1D4ED8;
+            --blue-color: #2563EB;
+            --orange-color: #E06D10;
+            --light-blue-color: #F1F5F9;
+            --transition: 0.35s ease;
+            --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            --radius: 10px;
+            --container: 1280px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden !important;
+        }
+
+        body {
+            font-family: "Plus Jakarta Sans", "Outfit", sans-serif;
+            background-color: white;
+            color: var(--quinary-color);
+            overflow-x: hidden !important;
+            line-height: 1.7;
+        }
+
+        .font-plus-jakarta {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        .font-Outfit {
+            font-family: "Outfit", sans-serif;
+        }
+
+        .ls-1 {
+            letter-spacing: 1px !important;
+        }
+
+        .ls-2 {
+            letter-spacing: 2px !important;
+        }
+
+        .font-900 {
+            font-weight: 900 !important;
+        }
+
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        a {
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: var(--container);
+        }
+
+        .content-wrapper {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        /* Helper Background & Text Utility Classes */
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+
+        .bg-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+
+        .bg-tertiary {
+            background-color: var(--tertiary-color) !important;
+        }
+
+        .bg-quaternary {
+            background-color: var(--quaternary-color) !important;
+        }
+
+        .bg-seventh {
+            background-color: var(--seventh-color) !important;
+        }
+
+        .bg-light-blue {
+            background-color: var(--light-blue-color) !important;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .text-tertiary {
+            color: var(--tertiary-color) !important;
+        }
+
+        .text-quinary {
+            color: var(--quinary-color) !important;
+        }
+
+        .text-seventh {
+            color: var(--seventh-color) !important;
+        }
+
+        .text-tenth {
+            color: var(--tenth-color) !important;
+        }
+
+        /* Hero Banner Matching Screenshot */
+        .hero-header {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+            background-size: 24px 24px;
+            padding: 4.5rem 1rem 4rem 1rem;
+            text-align: center;
+            position: relative;
+            border-top: 4px solid var(--seventh-color);
+        }
+
+        .official-tag-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 0.75rem;
+        }
+
+        .official-tag-line {
+            width: 30px;
+            height: 1px;
+            background-color: var(--seventh-color);
+        }
+
+        .official-tag-text {
+            color: var(--seventh-color);
+            font-family: "Outfit", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            color: #ffffff;
+            font-family: "Outfit", serif;
+            font-weight: 800;
+            font-size: 3.25rem;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        /* Table of Contents Box */
+        .toc-card {
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--secondary-color);
+            padding: 2.25rem 2.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .toc-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .toc-icon-badge {
+            width: 28px;
+            height: 28px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            border-radius: 2px;
+        }
+
+        .toc-title {
+            color: var(--primary-color);
+            font-family: "Outfit", sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: 1.5px;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .toc-divider {
+            flex-grow: 1;
+            height: 1px;
+            background-color: var(--secondary-color);
+        }
+
+        .toc-grid-item {
+            padding: 0.75rem 0.25rem;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        .toc-link {
+            color: var(--primary-color);
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: 0.925rem;
+            font-weight: 600;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .toc-link .toc-num {
+            color: var(--seventh-color);
+            font-family: "Outfit", sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .toc-link:hover {
+            color: var(--blue-color);
+            transform: translateX(3px);
+        }
+
+        /* Content Sections Matching Screenshot */
+        .section-block {
+            margin-bottom: 3rem;
+            scroll-margin-top: 20px;
+        }
+
+        .section-header-wrap {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 0.85rem;
+        }
+
+        .section-badge-icon {
+            width: 22px;
+            height: 22px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .section-heading-title {
+            color: var(--primary-color);
+            font-family: "Outfit", sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-underline {
+            width: 100%;
+            height: 3px;
+            background-color: var(--seventh-color);
+            margin-top: 4px;
+            border-radius: 2px;
+        }
+
+        .section-text {
+            color: var(--quinary-color);
+            font-size: 0.975rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Callout Highlight Box */
+        .quote-callout-box {
+            background-color: #F8FAF8;
+            border: 1px solid var(--secondary-color);
+            border-left: 4px solid var(--seventh-color);
+            padding: 1.25rem 1.75rem;
+            border-radius: 2px;
+            margin: 1.5rem 0;
+        }
+
+        .quote-callout-box p {
+            color: var(--quinary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .custom-bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.6rem;
+            color: var(--quinary-color);
+            font-size: 0.95rem;
+        }
+
+        .custom-bullet-list li::before {
+            content: "•";
+            padding-right: 10px;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--nine-color);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.875rem;
+            border-top: 3px solid var(--seventh-color);
+        }
+
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 42px;
+            }
+
+            .quote-callout-box p {
+                font-size: 14px;
+            }
+
+            .quote-callout-box {
+                padding: 16px;
+            }
+
+            .custom-bullet-list li {
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-tertiary navbar-container  sticky-top">
+        <div class="container p-3 ">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-between gap-2 gap-md-3">
+
+                <!-- Brand Logo -->
+                <div class="flex-shrink-0">
+                    <img src="images/image 1.webp" class="img-fluid aspect-ratio-17-6 navbar-logo" alt="Logo" />
+                </div>
+
+                <!-- Action Buttons (Mobile bottom fixed wrapper) -->
+                <div
+                    class="mobile-bottom-bar d-flex align-items-center justify-content-center justify-content-md-end gap-2 gap-sm-3">
+
+                    <!-- Button 1: Counsellor -->
+                    <a href="tel:9711849719"
+                        class="btn btn-navbar text-white text-opacity-90 font-plus-jakarta topbar-text d-none d-md-flex align-items-center gap-1 gap-sm-2 px-2 px-sm-3">
+                        <img src="images/Icon (1).svg" height="14" width="14" class="flex-shrink-0" alt="" />
+                        <span>Talk to Counsellor</span>
+                    </a>
+                    <a href="tel:9711849719"
+                        class="text-uppercase btn btn-counselllor-mobile fw-bold text-tertiary font-plus-jakarta topbar-text d-flex d-md-none align-items-center justify-content-center text-center gap-1 gap-sm-2 px-2 px-sm-3">
+                        <i class="bi bi-telephone"></i>
+                        <span>Talk to Counsellor</span>
+                    </a>
+                    <!-- Button 2: Admission (Desktop Text) -->
+                    <a href="#admission-form"
+                        class="d-flex btn btn-admission text-tertiary font-plus-jakarta fw-bold bg-seventh align-items-center justify-content-center gap-1 gap-sm-2 px-2 px-sm-3">
+                        <img src="images/Icon (2).svg" height="14" width="14" class="flex-shrink-0" alt="" />
+                        <span class="text-uppercase">Get Free Counselling</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <section class="hero-header bg-tertiary">
+        <div class="official-tag-wrap">
+            <span class="official-tag-line"></span>
+            <span class="official-tag-text">OFFICIAL POLICY</span>
+            <span class="official-tag-line"></span>
+        </div>
+        <h1 class="hero-title">Privacy Policy</h1>
+    </section>
+
+    <main class="container container-main">
+        <div class="content-wrapper">
+
+            <!-- Table of Contents Card Section -->
+            <!-- <div class="toc-card">
+                <div class="toc-header">
+                    <div class="toc-icon-badge">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </div>
+                    <h2 class="toc-title">TABLE OF CONTENTS</h2>
+                    <div class="toc-divider"></div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-0">
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-01" class="toc-link">
+                                <span class="toc-num">01</span> Introduction
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-02" class="toc-link">
+                                <span class="toc-num">02</span> Non-Personal Information
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-03" class="toc-link">
+                                <span class="toc-num">03</span> OTP Verification
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-04" class="toc-link">
+                                <span class="toc-num">04</span> Cookies
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-05" class="toc-link">
+                                <span class="toc-num">05</span> Information from Emails
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-06" class="toc-link">
+                                <span class="toc-num">06</span> Consent & Authorization
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-07" class="toc-link">
+                                <span class="toc-num">07</span> Interactive Forms
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-08" class="toc-link">
+                                <span class="toc-num">08</span> Links to External Sites
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item">
+                            <a href="#sec-09" class="toc-link">
+                                <span class="toc-num">09</span> User Authorization
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="toc-grid-item border-bottom-0">
+                            <a href="#sec-10" class="toc-link">
+                                <span class="toc-num">10</span> Internship / Job Opportunities
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- 01 Introduction -->
+            <section id="sec-01" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        01
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Introduction</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    Thank you for visiting the <strong>Amity University Online</strong> website. We are committed to
+                    protecting your privacy. As a general rule, we do not collect any personal information about you
+                    unless you voluntarily provide it.
+                </p>
+                <div class="quote-callout-box">
+                    <p>We do <strong>not</strong> sell, share, or transfer your personal information to third parties.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 02 Non-Personal Information We Collect -->
+            <section id="sec-02" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        02
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Non-Personal Information We Collect</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    If you browse our website without submitting any personal details, our system may automatically
+                    collect certain general information about your visit.
+                </p>
+                <p class="section-text mb-2">During your visit, we may record:</p>
+                <ul class="custom-bullet-list">
+                    <li>Your internet domain, such as xyz.com, xyz.net, or yourcollege.edu</li>
+                    <li>The type and version of your web browser</li>
+                    <li>Your operating system, such as Windows, macOS, or Unix</li>
+                    <li>The date and time of your visit, along with the pages you access</li>
+                    <li>The website you visited prior to arriving at our site, where applicable</li>
+                </ul>
+                <p class="section-text mt-3">
+                    This information is used solely for statistical and analytical purposes to improve the usability,
+                    functionality, and performance of our website. It does not personally identify you.
+                </p>
+            </section>
+
+            <!-- 03 OTP Verification for Payments -->
+            <section id="sec-03" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        03
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">OTP Verification for Payments</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    For secure transactions, we may use <strong>One-Time Password (OTP)</strong> authentication.
+                </p>
+                <p class="section-text">
+                    When making a payment, you may receive an OTP via SMS on your registered mobile number to verify and
+                    complete the transaction securely.
+                </p>
+            </section>
+
+            <!-- 04 Cookies -->
+            <section id="sec-04" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        04
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Cookies</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    We use cookies on certain pages of our website to enhance your browsing experience.
+                </p>
+                <p class="section-text">
+                    Cookies are small files stored on your device that help maintain your session while navigating the
+                    website. These cookies do not collect personal information.
+                </p>
+                <div class="quote-callout-box">
+                    <p>You may choose to accept or decline cookies through your browser settings. For added privacy, we
+                        recommend closing your browser after completing your session.</p>
+                </div>
+            </section>
+
+            <!-- 05 Information from Emails -->
+            <section id="sec-05" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        05
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Information from Emails</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    If you contact us via email, we may use the information you provide, including your email address,
+                    to respond to your inquiry.
+                </p>
+                <div class="quote-callout-box">
+                    <p>Please note that email communication may not always be secure. Avoid sharing sensitive
+                        information unnecessarily through email.</p>
+                </div>
+            </section>
+
+            <!-- 06 Consent & Authorization -->
+            <section id="sec-06" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        06
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Consent & Authorization</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    By registering with <strong>Amity University Online</strong>, you authorize us and our associates to
+                    contact you via <strong>email, SMS, WhatsApp, or phone calls</strong> between <strong>9:00 a.m. and
+                        9:00 p.m.</strong> regarding updates, services, programs, courses, and related information.
+                </p>
+                <div class="quote-callout-box">
+                    <p>This consent applies even if your number is registered under DND / DNDC / NCPR services and
+                        remains valid until your account is deactivated.</p>
+                </div>
+            </section>
+
+            <!-- 07 Information Gathered Through Interactive Forms -->
+            <section id="sec-07" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        07
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Information Gathered Through Interactive Forms</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    Certain pages of our website may contain interactive forms that allow you to voluntarily provide
+                    personal information such as your name, email address, mobile number, or other relevant details.
+                </p>
+                <p class="section-text mb-2">This may occur when you:</p>
+                <ul class="custom-bullet-list">
+                    <li>Register for counselling sessions, tests, quizzes, seminars, workshops, or training programs
+                        offered by Amity Online</li>
+                    <li>Download admission forms or related documents</li>
+                    <li>Submit an enquiry regarding a program or course</li>
+                    <li>Request information about admissions or academic offerings</li>
+                </ul>
+                <p class="section-text mt-3">
+                    The information you provide through these forms is used for its intended purpose and handled in
+                    accordance with our applicable privacy practices.
+                </p>
+            </section>
+
+            <!-- 08 Links to External Sites and Partners -->
+            <section id="sec-08" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        08
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Links to External Sites and Partners</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    This Privacy Policy outlines the privacy practices applicable to the <strong>Amity Online
+                        website</strong>. However, our website may contain links to third-party websites or platforms.
+                </p>
+                <p class="section-text">
+                    Once you leave the Amity Online website, you may be accessing platforms that are <strong>not under
+                        our control</strong>.
+                </p>
+                <div class="quote-callout-box">
+                    <p>External websites may use their own cookies, collect data, or request personal information. The
+                        privacy practices described in this policy do not apply to such third-party websites.</p>
+                </div>
+                <p class="section-text">
+                    We recommend reviewing the privacy policy of any external website you visit, particularly before
+                    sharing personal information.
+                </p>
+            </section>
+
+            <!-- 09 User Authorization -->
+            <section id="sec-09" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        09
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">User Authorization</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    By using <strong>Amity University Online</strong> services and/or registering on the platform, you
+                    consent to being contacted by Amity University Online, including its representatives, affiliates,
+                    and business partners, through:
+                </p>
+                <ul class="custom-bullet-list">
+                    <li>Email</li>
+                    <li>Phone calls</li>
+                    <li>SMS</li>
+                    <li>WhatsApp</li>
+                </ul>
+                <p class="section-text mt-2">
+                    Such communications may relate to the programs or courses you have selected, admission-related
+                    updates, or relevant information about them.
+                </p>
+                <div class="quote-callout-box">
+                    <p>You acknowledge and agree that such communication may occur even if your contact details are
+                        registered under DND, DNC, or NCPR services. This consent will remain valid until your account
+                        is deactivated, either by you or by us.</p>
+                </div>
+            </section>
+
+            <!-- 10 Internship / Job Opportunities -->
+            <section id="sec-10" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">
+                        10
+                    </div>
+                    <div>
+                        <h3 class="section-heading-title">Internship / Job Opportunities</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    Eligibility for internships or job opportunities will be determined based on <strong>merit</strong>
+                    and evaluated on a <strong>case-by-case basis</strong>.
+                </p>
+                <p class="section-text">
+                    Participation in or eligibility for any internship or job opportunity is subject to the applicable
+                    requirements, criteria, and terms of the respective opportunity.
+                </p>
+            </section>
+
+            <!-- Privacy Commitment Conclusion -->
+            <section class="quote-callout-box my-5">
+                <h5 class="font-Outfit fw-bold text-primary mb-2">Privacy Commitment</h5>
+                <p class="fw-normal">
+                    We value your trust and are committed to handling the information you provide responsibly and in
+                    accordance with applicable privacy requirements.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black container-main">
+        <div class="container text-center">
+            <div class="max-w-1024px mx-auto">
+                <h2 class="font-900 text-white font-Outfit footer-head text-uppercase mb-2">READY TO MAKE YOUR CHOICE?
+                </h2>
+                <h3 class="font-900 font-Outfit footer-head text-seventh text-uppercase mb-3">
+                    DON'T LET TOO MANY OPTIONS DELAY THE RIGHT DECISION.
+                </h3>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <div style="width: 60px; height: 4px; background-color: #ffc107; border-radius: 2px;"></div>
+            </div>
+
+            <p class="mb-2 footer-para">Explore Amity University Online programs.</p>
+            <div class="mb-4 font-plus-jakarta ls-1 fw-bold text-nine topbar-text text-uppercase tracking-wider">
+                <span>UG</span> <span class="text-warning mx-1">|</span>
+                <span>PG</span> <span class="text-warning mx-1">|</span>
+                <span>INTEGRATED</span> <span class="text-warning mx-1">|</span>
+                <span>SPECIALISED PROGRAMS</span>
+            </div>
+
+            <!-- Call to Action Buttons -->
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-5">
+                <a href="tel:9711849719"
+                    class="btn btn-hero bg-seventh d-flex gap-2 text-tertiary fw-bold text-center topbar-text w-md-full justify-content-center">
+                    TALK TO A COUNSELLOR
+                </a>
+                <a href="/au-online/#admission-form"
+                    class="btn btn-hero bg-tertiary d-flex gap-2 text-white fw-bold text-center topbar-text w-md-full justify-content-center ls-1 footer-btn-border">
+                    CHECK ELIGIBILITY
+                </a>
+            </div>
+            <p class="font-plus-jakarta disclaimer-span text-white text-center mx-auto opacity-75">
+                <strong>Disclaimer:</strong> Universities Nations act
+                as a
+                marketing service
+                partner
+                only. Amity
+                University holds the
+                right to request the change
+                or removal of any non-relevant content. Images used are for illustrative purposes and do not directly
+                represent
+                the respective colleges or universities.
+            </p>
+        </div>
+    </footer>
+    <div class="bg-white text-secondary py-3 border-top mb-5 mb-md-0">
+        <div
+            class="container d-flex flex-column flex-md-row justify-content-between align-items-center footer-copyright-text text-muted">
+            <div class="mb-2 mb-md-0">
+                © 2026 Universities Nation. All rights reserved.
+            </div>
+            <div class="d-flex align-items-center gap-2 my-1 my-md-0 mb-2 mb-md-0">
+                <a href="privacypolicy.html" target="_blank" rel="noopener noreferrer"
+                    class="text-muted hover-primary text-decoration-none">Privacy
+                    Policy</a>
+                <span>|</span>
+                <a href="termandcondition.html" target="_blank" rel="noopener noreferrer"
+                    class="text-muted hover-primary text-decoration-none">Terms &amp;
+                    Conditions</a>
+            </div>
+            <div>
+                Design and Developed By Mediagarh
+            </div>
+        </div>
+    </div>
+    <!-- Floating / Sticky Call Button -->
+    <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
+        <i class="bi bi-telephone-fill"></i>
+    </a>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | Amity University Online</title>
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        :root {
+            --primary-color: #001C3D;
+            --secondary-color: #E2E8F0;
+            --tertiary-color: #002E5E;
+            --quaternary-color: #020618;
+            --quinary-color: #45556C;
+            --sixth-color: #1D293D;
+            --seventh-color: #FFCB04;
+            --eight-color: #90A1B9;
+            --nine-color: #CAD5E2;
+            --tenth-color: #111827;
+            --eleventh-color: #18234D;
+            --twenth-color: #1D4ED8;
+            --blue-color: #2563EB;
+            --orange-color: #E06D10;
+            --light-blue-color: #F1F5F9;
+            --transition: 0.35s ease;
+            --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            --radius: 10px;
+            --container: 1280px;
+
+            /* Responsive Fluid Spacing & Sizes */
+            --hero-padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 3vw, 2rem);
+            --hero-title-size: clamp(2rem, 5vw, 3.25rem);
+            --section-title-size: clamp(1.2rem, 3vw, 1.4rem);
+            --body-text-size: clamp(0.9rem, 1.5vw, 0.975rem);
+            --toc-padding: clamp(1.25rem, 4vw, 2.25rem) clamp(1.25rem, 4vw, 2.5rem);
+            --section-gap: clamp(2rem, 5vw, 3rem);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden !important;
+        }
+
+        body {
+            font-family: "Plus Jakarta Sans", "Outfit", sans-serif;
+            background-color: white;
+            color: var(--quinary-color);
+            overflow-x: hidden !important;
+            line-height: 1.7;
+            font-size: var(--body-text-size);
+        }
+
+        .font-plus-jakarta {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+
+        .font-Outfit {
+            font-family: "Outfit", sans-serif;
+        }
+
+        .ls-1 {
+            letter-spacing: 1px !important;
+        }
+
+        .ls-2 {
+            letter-spacing: 2px !important;
+        }
+
+        .font-900 {
+            font-weight: 900 !important;
+        }
+
+        .fw-bold {
+            font-weight: 700 !important;
+        }
+
+        a {
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: var(--container);
+        }
+
+        .content-wrapper {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        /* Helper Background & Text Utility Classes */
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+
+        .bg-secondary {
+            background-color: var(--secondary-color) !important;
+        }
+
+        .bg-tertiary {
+            background-color: var(--tertiary-color) !important;
+        }
+
+        .bg-quaternary {
+            background-color: var(--quaternary-color) !important;
+        }
+
+        .bg-seventh {
+            background-color: var(--seventh-color) !important;
+        }
+
+        .bg-light-blue {
+            background-color: var(--light-blue-color) !important;
+        }
+
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+
+        .text-tertiary {
+            color: var(--tertiary-color) !important;
+        }
+
+        .text-quinary {
+            color: var(--quinary-color) !important;
+        }
+
+        .text-seventh {
+            color: var(--seventh-color) !important;
+        }
+
+        .text-tenth {
+            color: var(--tenth-color) !important;
+        }
+
+        /* Responsive Hero Banner */
+        .hero-header {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+            background-size: 24px 24px;
+            padding: 4.5rem 1rem 4rem 1rem;
+            text-align: center;
+            position: relative;
+            border-top: 4px solid var(--seventh-color);
+        }
+
+        .official-tag-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 0.75rem;
+        }
+
+        .official-tag-line {
+            width: 30px;
+            height: 1px;
+            background-color: var(--seventh-color);
+        }
+
+        .official-tag-text {
+            color: var(--seventh-color);
+            font-family: "Outfit", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            color: #ffffff;
+            font-family: "Outfit", serif;
+            font-weight: 800;
+            font-size: 3.25rem;
+            margin: 0;
+            letter-spacing: -0.5px;
+        }
+
+        /* Responsive Table of Contents Box */
+        .toc-card {
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--secondary-color);
+            padding: var(--toc-padding);
+            position: relative;
+            z-index: 10;
+            margin-top: -2rem;
+            margin-bottom: var(--section-gap);
+        }
+
+        .toc-header {
+            display: flex;
+            align-items: center;
+            gap: clamp(8px, 2vw, 12px);
+            margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+        }
+
+        .toc-icon-badge {
+            width: 28px;
+            height: 28px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .toc-title {
+            color: var(--primary-color);
+            font-family: "Outfit", sans-serif;
+            font-weight: 800;
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            letter-spacing: 1.5px;
+            margin: 0;
+            white-space: nowrap;
+        }
+
+        .toc-divider {
+            flex-grow: 1;
+            height: 1px;
+            background-color: var(--secondary-color);
+        }
+
+        .toc-grid-item {
+            padding: clamp(0.5rem, 1.5vw, 0.75rem) 0.25rem;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+
+        .toc-link {
+            color: var(--primary-color);
+            font-family: "Plus Jakarta Sans", sans-serif;
+            font-size: clamp(0.85rem, 1.5vw, 0.925rem);
+            font-weight: 600;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .toc-link .toc-num {
+            color: var(--seventh-color);
+            font-family: "Outfit", sans-serif;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .toc-link:hover {
+            color: var(--blue-color);
+            transform: translateX(3px);
+        }
+
+        /* Responsive Content Sections */
+        .section-block {
+            margin-bottom: 3rem;
+            scroll-margin-top: 20px;
+            ;
+        }
+
+        .section-header-wrap {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 0.85rem;
+        }
+
+        .section-badge-icon {
+            width: 22px;
+            height: 22px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .section-heading-title {
+            color: var(--primary-color);
+            font-family: "Outfit", sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-underline {
+            width: 100%;
+            height: 3px;
+            background-color: var(--seventh-color);
+            margin-top: 4px;
+            border-radius: 2px;
+        }
+
+        .section-text {
+            color: var(--quinary-color);
+            font-size: 0.975rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Callout Highlight Box */
+        .quote-callout-box {
+            background-color: #F8FAF8;
+            border: 1px solid var(--secondary-color);
+            border-left: 4px solid var(--seventh-color);
+            padding: 1.25rem 1.75rem;
+            border-radius: 2px;
+            margin: 1.5rem 0;
+        }
+
+        .quote-callout-box p {
+            color: var(--quinary-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .custom-bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.6rem;
+            color: var(--quinary-color);
+            font-size: 0.95rem;
+        }
+
+        .custom-bullet-list li::before {
+            content: "•";
+            padding-right: 10px;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--nine-color);
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.875rem;
+            border-top: 3px solid var(--seventh-color);
+        }
+
+        /* Media Queries for Fine-Tuning Mobile Layouts */
+        @media (max-width: 576px) {
+            .hero-title {
+                font-size: 42px;
+            }
+
+            .quote-callout-box p {
+                font-size: 14px;
+            }
+
+            .quote-callout-box {
+                padding: 16px;
+            }
+
+            .custom-bullet-list li {
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-tertiary navbar-container sticky-top">
+        <div class="container p-3">
+            <div class="d-flex align-items-center justify-content-center justify-content-md-between gap-2 gap-md-3">
+
+                <!-- Brand Logo -->
+                <div class="flex-shrink-0">
+                    <img src="images/image 1.webp" class="img-fluid aspect-ratio-17-6 navbar-logo" alt="Logo" />
+                </div>
+
+                <!-- Action Buttons -->
+                <div
+                    class="mobile-bottom-bar d-flex align-items-center justify-content-center justify-content-md-end gap-2 gap-sm-3">
+
+                    <!-- Button 1: Counsellor -->
+                    <a href="tel:9711849719"
+                        class="btn btn-navbar text-white text-opacity-90 font-plus-jakarta topbar-text d-none d-md-flex align-items-center gap-1 gap-sm-2 px-2 px-sm-3">
+                        <img src="images/Icon (1).svg" height="14" width="14" class="flex-shrink-0" alt="" />
+                        <span>Talk to Counsellor</span>
+                    </a>
+                    <a href="tel:9711849719"
+                        class="text-uppercase btn btn-counselllor-mobile fw-bold text-tertiary font-plus-jakarta topbar-text d-flex d-md-none align-items-center justify-content-center text-center gap-1 gap-sm-2 px-2 px-sm-3">
+                        <i class="bi bi-telephone"></i>
+                        <span>Talk to Counsellor</span>
+                    </a>
+
+                    <!-- Button 2: Admission -->
+                    <a href="#admission-form"
+                        class="d-flex btn btn-admission text-tertiary font-plus-jakarta fw-bold bg-seventh align-items-center justify-content-center gap-1 gap-sm-2 px-2 px-sm-3">
+                        <img src="images/Icon (2).svg" height="14" width="14" class="flex-shrink-0" alt="" />
+                        <span class="text-uppercase">Get Free Counselling</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-header bg-tertiary">
+        <div class="official-tag-wrap">
+            <span class="official-tag-line"></span>
+            <span class="official-tag-text">OFFICIAL POLICY</span>
+            <span class="official-tag-line"></span>
+        </div>
+        <h1 class="hero-title">Terms & Conditions</h1>
+    </section>
+
+    <main class="container container-main my-4">
+        <div class="content-wrapper">
+            <!-- Content Sections -->
+
+            <!-- 01. Introduction -->
+            <section id="section-01" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">01</div>
+                    <div>
+                        <h3 class="section-heading-title"> Introduction</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    Welcome to Amity University Online ("University", "we", "our", "us"). These Terms and Conditions
+                    ("Terms") govern your access to and use of our online learning platform, courses, and related
+                    services (collectively, the "Services").
+                </p>
+                <div class="quote-callout-box">
+                    <p>By accessing or using our Services, you agree to be bound by these Terms. Please read them
+                        carefully before proceeding.</p>
+                </div>
+            </section>
+
+            <!-- 02. Eligibility -->
+            <section id="section-02" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">02</div>
+                    <div>
+                        <h3 class="section-heading-title">Eligibility</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">By using the Services, you represent and warrant that:</p>
+                <ul class="custom-bullet-list">
+                    <li>You are at least 18 years old, or have obtained parental/guardian consent.</li>
+                    <li>All information provided during registration is accurate, current, and complete.</li>
+                </ul>
+            </section>
+
+            <!-- 03. Registration and Account Responsibility -->
+            <section id="section-03" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">03</div>
+                    <div>
+                        <h3 class="section-heading-title">Registration and Account Responsibility</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <ul class="custom-bullet-list">
+                    <li>You must create an account to access certain features of the platform.</li>
+                    <li>You are solely responsible for maintaining the confidentiality of your login credentials.</li>
+                    <li>You agree to notify us immediately of any unauthorized use of your account.</li>
+                </ul>
+            </section>
+
+            <!-- 04. Courses and Enrollment -->
+            <section id="section-04" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">04</div>
+                    <div>
+                        <h3 class="section-heading-title">Courses and Enrollment</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <ul class="custom-bullet-list">
+                    <li>Enrollment in courses is subject to eligibility criteria and availability.</li>
+                    <li>The University reserves the right to modify course content, schedules, or instructors.</li>
+                    <li>Completion of a course does not guarantee certification unless all applicable requirements are
+                        met.</li>
+                </ul>
+            </section>
+
+            <!-- 05. Fees and Payments -->
+            <section id="section-05" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">05</div>
+                    <div>
+                        <h3 class="section-heading-title">Fees and Payments</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <ul class="custom-bullet-list">
+                    <li>All fees must be paid in accordance with the payment schedule provided at enrollment.</li>
+                    <li>Fees are non-refundable unless otherwise expressly stated in writing.</li>
+                    <li>The University reserves the right to revise fees at any time with appropriate notice.</li>
+                </ul>
+            </section>
+
+            <!-- 06. Intellectual Property -->
+            <section id="section-06" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">06</div>
+                    <div>
+                        <h3 class="section-heading-title">Intellectual Property</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    All course materials, content, videos, and resources available through the Services are the
+                    exclusive intellectual property of the University.
+                </p>
+                <ul class="custom-bullet-list">
+                    <li>You may not copy, distribute, reproduce, or commercially exploit any content without prior
+                        written permission from the University.</li>
+                </ul>
+            </section>
+
+            <!-- 07. User Conduct -->
+            <section id="section-07" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">07</div>
+                    <div>
+                        <h3 class="section-heading-title">User Conduct</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">As a user of the Services, you expressly agree not to:</p>
+                <ul class="custom-bullet-list">
+                    <li>Use the Services for any unlawful or prohibited purpose.</li>
+                    <li>Share or transfer your account credentials to any third party.</li>
+                    <li>Upload harmful, offensive, defamatory, or inappropriate content.</li>
+                    <li>Attempt to disrupt, interfere with, or compromise the integrity of the platform.</li>
+                </ul>
+            </section>
+
+            <!-- 08. Assessments and Academic Integrity -->
+            <section id="section-08" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">08</div>
+                    <div>
+                        <h3 class="section-heading-title">Assessments and Academic Integrity</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <div class="quote-callout-box">
+                    <p>Upholding academic integrity is fundamental to the value of your qualification.</p>
+                </div>
+                <ul class="custom-bullet-list">
+                    <li>You agree to complete all assessments honestly and independently.</li>
+                    <li>Any form of cheating, plagiarism, or academic misconduct may result in suspension or termination
+                        of access to the Services and may be subject to further action in accordance with applicable
+                        University policies.</li>
+                </ul>
+            </section>
+
+            <!-- 09. Certification -->
+            <section id="section-09" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">09</div>
+                    <div>
+                        <h3 class="section-heading-title">Certification</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    Certificates of completion will be awarded only upon successful fulfilment of all course
+                    requirements and, where applicable, satisfactory completion of any verification processes mandated
+                    by the University.
+                </p>
+            </section>
+
+            <!-- 10. Privacy -->
+            <section id="section-10" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">10</div>
+                    <div>
+                        <h3 class="section-heading-title">Privacy</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    Your use of the Services is governed by our <strong>Privacy Policy</strong>. By using the Services,
+                    you expressly consent to the collection, processing, and use of your personal data in accordance
+                    with that policy.
+                </p>
+            </section>
+
+            <!-- 11. Limitation of Liability -->
+            <section id="section-11" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">11</div>
+                    <div>
+                        <h3 class="section-heading-title">Limitation of Liability</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    To the fullest extent permitted by applicable law, the University shall not be liable for any
+                    indirect, incidental, special, or consequential damages arising from or in connection with your use
+                    of, or inability to use, the Services.
+                </p>
+            </section>
+
+            <!-- 12. Termination -->
+            <section id="section-12" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">12</div>
+                    <div>
+                        <h3 class="section-heading-title">Termination</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    The University reserves the right to suspend or permanently terminate your access to the Services at
+                    its sole discretion, without prior notice, upon violation of these Terms or for any conduct deemed
+                    harmful to the platform or its community.
+                </p>
+            </section>
+
+            <!-- 13. Changes to Terms -->
+            <section id="section-13" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">13</div>
+                    <div>
+                        <h3 class="section-heading-title">Changes to Terms</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    We may update or revise these Terms from time to time. Continued use of the Services following any
+                    such changes constitutes your acceptance of the revised Terms. We encourage you to review this page
+                    periodically.
+                </p>
+            </section>
+
+            <!-- 14. Governing Law -->
+            <section id="section-14" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">14</div>
+                    <div>
+                        <h3 class="section-heading-title">Governing Law</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic
+                        of India</strong>. Any disputes arising hereunder shall be subject to the exclusive jurisdiction
+                    of the competent courts in India.
+                </p>
+            </section>
+
+            <!-- 15. Contact Information -->
+            <section id="section-15" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">15</div>
+                    <div>
+                        <h3 class="section-heading-title">Contact Information</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    For any questions, concerns, or queries regarding these Terms, please reach out to our support team:
+                </p>
+                <div class="quote-callout-box">
+                    <p><i class="fa-solid fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a
+                            href="tel:9711849719" class="text-primary">+91 9711849719</a></p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black container-main">
+        <div class="container text-center">
+            <div class="max-w-1024px mx-auto">
+                <h2 class="font-900 text-white font-Outfit footer-head text-uppercase mb-2">READY TO MAKE YOUR CHOICE?
+                </h2>
+                <h3 class="font-900 font-Outfit footer-head text-seventh text-uppercase mb-3">
+                    DON'T LET TOO MANY OPTIONS DELAY THE RIGHT DECISION.
+                </h3>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <div style="width: 60px; height: 4px; background-color: #ffc107; border-radius: 2px;"></div>
+            </div>
+
+            <p class="mb-2 footer-para">Explore Amity University Online programs.</p>
+            <div class="mb-4 font-plus-jakarta ls-1 fw-bold text-nine topbar-text text-uppercase tracking-wider">
+                <span>UG</span> <span class="text-warning mx-1">|</span>
+                <span>PG</span> <span class="text-warning mx-1">|</span>
+                <span>INTEGRATED</span> <span class="text-warning mx-1">|</span>
+                <span>SPECIALISED PROGRAMS</span>
+            </div>
+
+            <!-- Call to Action Buttons -->
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mb-5">
+                <a href="tel:9711849719"
+                    class="btn btn-hero bg-seventh d-flex gap-2 text-tertiary fw-bold text-center topbar-text w-md-full justify-content-center">
+                    TALK TO A COUNSELLOR
+                </a>
+                <a href="/au-online/#admission-form"
+                    class="btn btn-hero bg-tertiary d-flex gap-2 text-white fw-bold text-center topbar-text w-md-full justify-content-center ls-1 footer-btn-border">
+                    CHECK ELIGIBILITY
+                </a>
+            </div>
+            <p class="font-plus-jakarta disclaimer-span text-white text-center mx-auto opacity-75">
+                <strong>Disclaimer:</strong> Universities Nations act as a marketing service partner only. Amity
+                University holds the right to request the change or removal of any non-relevant content. Images used are
+                for illustrative purposes and do not directly represent the respective colleges or universities.
+            </p>
+        </div>
+    </footer>
+    <div class="bg-white text-secondary py-3 border-top mb-5 mb-md-0">
+        <div
+            class="container d-flex flex-column flex-md-row justify-content-between align-items-center footer-copyright-text text-muted">
+            <div class="mb-2 mb-md-0">
+                © 2026 Universities Nation. All rights reserved.
+            </div>
+            <div class="d-flex align-items-center gap-2 my-1 my-md-0 mb-2 mb-md-0">
+                <a href="privacypolicy.html" target="_blank" rel="noopener noreferrer"
+                    class="text-muted  hover-primary text-decoration-none">Privacy
+                    Policy</a>
+                <span>|</span>
+                <a href="termandcondition.html" target="_blank" rel="noopener noreferrer"
+                    class="text-muted  hover-primary text-decoration-none">Terms &amp;
+                    Conditions</a>
+            </div>
+            <div>
+                Design and Developed By Mediagarh
+            </div>
+        </div>
+    </div>
+    <!-- Floating / Sticky Call Button -->
+    <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
+        <i class="bi bi-telephone-fill"></i>
+    </a>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
