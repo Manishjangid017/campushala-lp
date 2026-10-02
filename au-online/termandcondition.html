@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions | Amity University Online</title>
+    <title>Terms & Conditions — Campushala</title>
+    <!-- Google Fonts -->
     <link rel="icon" type="image/webp" href="images/favicon.webp">
     <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,14 +42,6 @@
             --shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
             --radius: 10px;
             --container: 1280px;
-
-            /* Responsive Fluid Spacing & Sizes */
-            --hero-padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 3vw, 2rem);
-            --hero-title-size: clamp(2rem, 5vw, 3.25rem);
-            --section-title-size: clamp(1.2rem, 3vw, 1.4rem);
-            --body-text-size: clamp(0.9rem, 1.5vw, 0.975rem);
-            --toc-padding: clamp(1.25rem, 4vw, 2.25rem) clamp(1.25rem, 4vw, 2.5rem);
-            --section-gap: clamp(2rem, 5vw, 3rem);
         }
 
         * {
@@ -68,7 +61,6 @@
             color: var(--quinary-color);
             overflow-x: hidden !important;
             line-height: 1.7;
-            font-size: var(--body-text-size);
         }
 
         .font-plus-jakarta {
@@ -77,22 +69,6 @@
 
         .font-Outfit {
             font-family: "Outfit", sans-serif;
-        }
-
-        .ls-1 {
-            letter-spacing: 1px !important;
-        }
-
-        .ls-2 {
-            letter-spacing: 2px !important;
-        }
-
-        .font-900 {
-            font-weight: 900 !important;
-        }
-
-        .fw-bold {
-            font-weight: 700 !important;
         }
 
         a {
@@ -115,52 +91,7 @@
             margin: 0 auto;
         }
 
-        /* Helper Background & Text Utility Classes */
-        .bg-primary {
-            background-color: var(--primary-color) !important;
-        }
-
-        .bg-secondary {
-            background-color: var(--secondary-color) !important;
-        }
-
-        .bg-tertiary {
-            background-color: var(--tertiary-color) !important;
-        }
-
-        .bg-quaternary {
-            background-color: var(--quaternary-color) !important;
-        }
-
-        .bg-seventh {
-            background-color: var(--seventh-color) !important;
-        }
-
-        .bg-light-blue {
-            background-color: var(--light-blue-color) !important;
-        }
-
-        .text-primary {
-            color: var(--primary-color) !important;
-        }
-
-        .text-tertiary {
-            color: var(--tertiary-color) !important;
-        }
-
-        .text-quinary {
-            color: var(--quinary-color) !important;
-        }
-
-        .text-seventh {
-            color: var(--seventh-color) !important;
-        }
-
-        .text-tenth {
-            color: var(--tenth-color) !important;
-        }
-
-        /* Responsive Hero Banner */
+        /* Hero Banner */
         .hero-header {
             background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
             background-size: 24px 24px;
@@ -202,87 +133,24 @@
             letter-spacing: -0.5px;
         }
 
-        /* Responsive Table of Contents Box */
-        .toc-card {
-            background: #ffffff;
-            border-radius: 4px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--secondary-color);
-            padding: var(--toc-padding);
-            position: relative;
-            z-index: 10;
-            margin-top: -2rem;
-            margin-bottom: var(--section-gap);
+        .hero-subtitle {
+            color: #ffffffd5;
+            font-family: "Outfit", serif;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
         }
 
-        .toc-header {
-            display: flex;
-            align-items: center;
-            gap: clamp(8px, 2vw, 12px);
-            margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+        /* Content Sections */
+        .container-main {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
 
-        .toc-icon-badge {
-            width: 28px;
-            height: 28px;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            border-radius: 2px;
-            flex-shrink: 0;
-        }
-
-        .toc-title {
-            color: var(--primary-color);
-            font-family: "Outfit", sans-serif;
-            font-weight: 800;
-            font-size: clamp(0.95rem, 2vw, 1.1rem);
-            letter-spacing: 1.5px;
-            margin: 0;
-            white-space: nowrap;
-        }
-
-        .toc-divider {
-            flex-grow: 1;
-            height: 1px;
-            background-color: var(--secondary-color);
-        }
-
-        .toc-grid-item {
-            padding: clamp(0.5rem, 1.5vw, 0.75rem) 0.25rem;
-            border-bottom: 1px solid var(--secondary-color);
-        }
-
-        .toc-link {
-            color: var(--primary-color);
-            font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: clamp(0.85rem, 1.5vw, 0.925rem);
-            font-weight: 600;
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-        }
-
-        .toc-link .toc-num {
-            color: var(--seventh-color);
-            font-family: "Outfit", sans-serif;
-            font-weight: 700;
-            font-size: 0.85rem;
-        }
-
-        .toc-link:hover {
-            color: var(--blue-color);
-            transform: translateX(3px);
-        }
-
-        /* Responsive Content Sections */
         .section-block {
             margin-bottom: 3rem;
             scroll-margin-top: 20px;
-            ;
         }
 
         .section-header-wrap {
@@ -329,7 +197,20 @@
             margin-bottom: 1rem;
         }
 
-        /* Callout Highlight Box */
+        .sub-heading {
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        /* Callout Box */
         .quote-callout-box {
             background-color: #F8FAF8;
             border: 1px solid var(--secondary-color);
@@ -346,6 +227,11 @@
             margin: 0;
         }
 
+        /* Lists */
+        .custom-bullet-list {
+            margin-bottom: 1rem;
+        }
+
         .custom-bullet-list li {
             position: relative;
             padding-left: 1.5rem;
@@ -356,7 +242,9 @@
 
         .custom-bullet-list li::before {
             content: "•";
-            padding-right: 10px;
+            position: absolute;
+            left: 0;
+            top: -2px;
             color: var(--primary-color);
             font-weight: bold;
             font-size: 1.2rem;
@@ -371,7 +259,6 @@
             border-top: 3px solid var(--seventh-color);
         }
 
-        /* Media Queries for Fine-Tuning Mobile Layouts */
         @media (max-width: 576px) {
             .hero-title {
                 font-size: 42px;
@@ -386,7 +273,7 @@
             }
 
             .custom-bullet-list li {
-                margin-bottom: 0px;
+                margin-bottom: 0.4rem;
             }
         }
     </style>
@@ -394,15 +281,15 @@
 
 <body>
     <nav class="bg-tertiary navbar-container sticky-top">
-        <div class="container p-3">
+        <div class="container p-3 ">
             <div class="d-flex align-items-center justify-content-center justify-content-md-between gap-2 gap-md-3">
 
                 <!-- Brand Logo -->
                 <div class="flex-shrink-0">
-                    <img src="images/image 1.webp" class="img-fluid aspect-ratio-17-6 navbar-logo" alt="Logo" />
+                    <img src="images/Campushala-logo.webp" class="img-fluid aspect-ratio-17-6 navbar-logo" alt="Logo" />
                 </div>
 
-                <!-- Action Buttons -->
+                <!-- Action Buttons (Mobile bottom fixed wrapper) -->
                 <div
                     class="mobile-bottom-bar d-flex align-items-center justify-content-center justify-content-md-end gap-2 gap-sm-3">
 
@@ -417,8 +304,7 @@
                         <i class="bi bi-telephone"></i>
                         <span>Talk to Counsellor</span>
                     </a>
-
-                    <!-- Button 2: Admission -->
+                    <!-- Button 2: Admission (Desktop Text) -->
                     <a href="#admission-form"
                         class="d-flex btn btn-admission text-tertiary font-plus-jakarta fw-bold bg-seventh align-items-center justify-content-center gap-1 gap-sm-2 px-2 px-sm-3">
                         <img src="images/Icon (2).svg" height="14" width="14" class="flex-shrink-0" alt="" />
@@ -430,273 +316,321 @@
             </div>
         </div>
     </nav>
-
+    <!-- Floating / Sticky Call Button -->
+    <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
+        <i class="bi bi-telephone-fill"></i>
+    </a>
+    <!-- Hero Banner -->
     <section class="hero-header bg-tertiary">
         <div class="official-tag-wrap">
             <span class="official-tag-line"></span>
             <span class="official-tag-text">OFFICIAL POLICY</span>
             <span class="official-tag-line"></span>
         </div>
-        <h1 class="hero-title">Terms & Conditions</h1>
+        <h1 class="hero-title">Terms &amp; Conditions</h1>
+        <p class="hero-subtitle">Last Updated: September 30, 2026</p>
     </section>
 
-    <main class="container container-main my-4">
+    <!-- Main Content Container -->
+    <main class="container container-main">
         <div class="content-wrapper">
-            <!-- Content Sections -->
 
-            <!-- 01. Introduction -->
-            <section id="section-01" class="section-block">
+            <!-- Intro Box -->
+            <div class="mb-4">
+                <p class="mb-2"> Welcome to Campushala ("Campushala," "we," "us," or "our"). These
+                    Terms and Conditions ("Terms") govern your access to and use of our website <a
+                        href="https://campushala.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none text-primary">[https://campushala.com/]</a> and the
+                    education counselling, admission-guidance, and related services we provide (collectively, the
+                    "Services").
+                </p>
+                <p class="mb-2">By accessing or using our Website or Services, you agree to be bound by these Terms. If
+                    you do not agree with any part of these Terms, please do not use our Website or Services.
+                </p>
+            </div>
+
+
+            <!-- Section 1 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">01</div>
                     <div>
-                        <h3 class="section-heading-title"> Introduction</h3>
+                        <h2 class="section-heading-title">About Our Services</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    Welcome to Amity University Online ("University", "we", "our", "us"). These Terms and Conditions
-                    ("Terms") govern your access to and use of our online learning platform, courses, and related
-                    services (collectively, the "Services").
-                </p>
+                <p class="section-text">Campushala is an independent education counselling platform. We help students
+                    and prospective learners explore, compare, and apply to online and offline degree programs offered
+                    by various partner universities and institutions ("Partner Institutions").</p>
                 <div class="quote-callout-box">
-                    <p>By accessing or using our Services, you agree to be bound by these Terms. Please read them
-                        carefully before proceeding.</p>
+                    <p><strong>Important Disclaimer:</strong> Campushala is not a university, degree-granting body, or
+                        accreditation authority. We do not issue degrees, certificates, or diplomas. All admissions,
+                        course delivery, examinations, and degree conferrals are the sole responsibility of the
+                        respective Partner Institution, governed by that institution's own terms, policies, and
+                        applicable regulatory approvals (such as UGC, AICTE, NAAC, etc.).</p>
                 </div>
             </section>
 
-            <!-- 02. Eligibility -->
-            <section id="section-02" class="section-block">
+            <!-- Section 2 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">02</div>
                     <div>
-                        <h3 class="section-heading-title">Eligibility</h3>
+                        <h2 class="section-heading-title">Eligibility</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">By using the Services, you represent and warrant that:</p>
+                <p class="section-text">By using our Website or Services, you represent and warrant that:</p>
                 <ul class="custom-bullet-list">
-                    <li>You are at least 18 years old, or have obtained parental/guardian consent.</li>
-                    <li>All information provided during registration is accurate, current, and complete.</li>
+                    <li>You are at least 18 years of age, or are using the Website with the involvement and consent of a
+                        parent or legal guardian.</li>
+                    <li>You have the legal capacity to enter into a binding agreement.</li>
+                    <li>All information you provide to us is accurate, current, and complete.</li>
                 </ul>
             </section>
 
-            <!-- 03. Registration and Account Responsibility -->
-            <section id="section-03" class="section-block">
+            <!-- Section 3 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">03</div>
                     <div>
-                        <h3 class="section-heading-title">Registration and Account Responsibility</h3>
+                        <h2 class="section-heading-title">User Obligations</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
+                <p class="section-text">When using our Website and Services, you explicitly agree that you will not:</p>
                 <ul class="custom-bullet-list">
-                    <li>You must create an account to access certain features of the platform.</li>
-                    <li>You are solely responsible for maintaining the confidentiality of your login credentials.</li>
-                    <li>You agree to notify us immediately of any unauthorized use of your account.</li>
+                    <li>Provide false, misleading, or fraudulent information.</li>
+                    <li>Use the Website for any unlawful purpose or in violation of any applicable local, state,
+                        national, or international law.</li>
+                    <li>Attempt to gain unauthorized access to our systems, servers, or databases.</li>
+                    <li>Interfere with or disrupt the operation of the Website or the servers/networks used to make it
+                        available.</li>
+                    <li>Use any automated means (bots, scrapers, crawlers) to access the Website without our prior
+                        written consent.</li>
+                    <li>Impersonate any person or entity, or misrepresent your affiliation with any person or entity.
+                    </li>
+                    <li>Upload or transmit viruses, malware, or any other malicious code.</li>
                 </ul>
             </section>
 
-            <!-- 04. Courses and Enrollment -->
-            <section id="section-04" class="section-block">
+            <!-- Section 4 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">04</div>
                     <div>
-                        <h3 class="section-heading-title">Courses and Enrollment</h3>
+                        <h2 class="section-heading-title">Counselling Services &amp; Third-Party Institutions</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <ul class="custom-bullet-list">
-                    <li>Enrollment in courses is subject to eligibility criteria and availability.</li>
-                    <li>The University reserves the right to modify course content, schedules, or instructors.</li>
-                    <li>Completion of a course does not guarantee certification unless all applicable requirements are
-                        met.</li>
+                    <li>Our counselling services are provided free of cost to students, unless explicitly stated
+                        otherwise at the time of engagement.</li>
+                    <li>Campushala may receive referral or facilitation fees from Partner Institutions for successful
+                        admissions — this does not affect the accuracy or objectivity of information provided, and it
+                        does not create any additional cost to the student.</li>
+                    <li>We make reasonable efforts to ensure that course information, fee structures, rankings, and
+                        accreditation details shared on our Website are accurate and up to date. However, this
+                        information is sourced from Partner Institutions and third-party sources and is subject to
+                        change without notice. We strongly recommend verifying all details directly with the Partner
+                        Institution before making any admission or payment decision.</li>
+                    <li>Campushala is not responsible for any changes to fee structures, course curriculum, eligibility
+                        criteria, or accreditation status made by Partner Institutions after publication on our Website.
+                    </li>
                 </ul>
             </section>
 
-            <!-- 05. Fees and Payments -->
-            <section id="section-05" class="section-block">
+            <!-- Section 5 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">05</div>
                     <div>
-                        <h3 class="section-heading-title">Fees and Payments</h3>
+                        <h2 class="section-heading-title">Fees and Payments</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <ul class="custom-bullet-list">
-                    <li>All fees must be paid in accordance with the payment schedule provided at enrollment.</li>
-                    <li>Fees are non-refundable unless otherwise expressly stated in writing.</li>
-                    <li>The University reserves the right to revise fees at any time with appropriate notice.</li>
+                    <li>Any fees, tuition, or charges payable for a course are payable directly to the respective
+                        Partner Institution, not to Campushala, unless explicitly stated otherwise.</li>
+                    <li>Campushala does not process, hold, or have access to any tuition fee payments made by students
+                        to Partner Institutions.</li>
+                    <li>Refund policies for course fees are governed solely by the respective Partner Institution's
+                        refund policy. Campushala has no control over, and bears no responsibility for, refund decisions
+                        made by Partner Institutions.</li>
                 </ul>
             </section>
 
-            <!-- 06. Intellectual Property -->
-            <section id="section-06" class="section-block">
+            <!-- Section 6 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">06</div>
                     <div>
-                        <h3 class="section-heading-title">Intellectual Property</h3>
+                        <h2 class="section-heading-title">Intellectual Property</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    All course materials, content, videos, and resources available through the Services are the
-                    exclusive intellectual property of the University.
-                </p>
-                <ul class="custom-bullet-list">
-                    <li>You may not copy, distribute, reproduce, or commercially exploit any content without prior
-                        written permission from the University.</li>
-                </ul>
+                <p class="section-text">All content on this Website — including text, graphics, logos, images, videos,
+                    and software — is the property of Campushala or its licensors and is protected by applicable
+                    intellectual property laws, unless otherwise credited to a Partner Institution.</p>
+                <p class="section-text">You may not reproduce, distribute, modify, publicly display, or create
+                    derivative works from any content on this Website without our prior written consent, except for
+                    personal, non-commercial use.</p>
             </section>
 
-            <!-- 07. User Conduct -->
-            <section id="section-07" class="section-block">
+            <!-- Section 7 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">07</div>
                     <div>
-                        <h3 class="section-heading-title">User Conduct</h3>
+                        <h2 class="section-heading-title">Third-Party Links</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">As a user of the Services, you expressly agree not to:</p>
-                <ul class="custom-bullet-list">
-                    <li>Use the Services for any unlawful or prohibited purpose.</li>
-                    <li>Share or transfer your account credentials to any third party.</li>
-                    <li>Upload harmful, offensive, defamatory, or inappropriate content.</li>
-                    <li>Attempt to disrupt, interfere with, or compromise the integrity of the platform.</li>
-                </ul>
+                <p class="section-text">Our Website may contain links to third-party websites, including Partner
+                    Institution websites, payment gateways, and social media platforms. We do not control and are not
+                    responsible for the content, privacy practices, or terms of any third-party website. Accessing such
+                    links is done entirely at your own risk.</p>
             </section>
 
-            <!-- 08. Assessments and Academic Integrity -->
-            <section id="section-08" class="section-block">
+            <!-- Section 8 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">08</div>
                     <div>
-                        <h3 class="section-heading-title">Assessments and Academic Integrity</h3>
+                        <h2 class="section-heading-title">Disclaimer of Warranties</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <div class="quote-callout-box">
-                    <p>Upholding academic integrity is fundamental to the value of your qualification.</p>
-                </div>
+                <p class="section-text">Our Website and Services are provided on an "as is" and "as available" basis. To
+                    the fullest extent permitted by applicable law, Campushala makes no warranties, express or implied,
+                    regarding:</p>
                 <ul class="custom-bullet-list">
-                    <li>You agree to complete all assessments honestly and independently.</li>
-                    <li>Any form of cheating, plagiarism, or academic misconduct may result in suspension or termination
-                        of access to the Services and may be subject to further action in accordance with applicable
-                        University policies.</li>
+                    <li>The accuracy, completeness, or reliability of any information provided on the Website.</li>
+                    <li>Admission outcomes, placement outcomes, or career results following enrolment in any course.
+                    </li>
+                    <li>Uninterrupted or error-free operation of the Website.</li>
                 </ul>
             </section>
 
-            <!-- 09. Certification -->
-            <section id="section-09" class="section-block">
+            <!-- Section 9 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">09</div>
                     <div>
-                        <h3 class="section-heading-title">Certification</h3>
+                        <h2 class="section-heading-title">Limitation of Liability</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    Certificates of completion will be awarded only upon successful fulfilment of all course
-                    requirements and, where applicable, satisfactory completion of any verification processes mandated
-                    by the University.
-                </p>
+                <p class="section-text">To the maximum extent permitted by applicable law, Campushala shall not be
+                    liable for any indirect, incidental, special, consequential, or punitive damages, including but not
+                    limited to loss of admission opportunity, loss of fees paid to a Partner Institution, or loss of
+                    data, arising out of or in connection with your use of our Website or Services.</p>
+                <p class="section-text">Our total liability for any claim arising from these Terms or your use of our
+                    Services shall not exceed the amount, if any, paid by you directly to Campushala for the specific
+                    service giving rise to the claim.</p>
             </section>
 
-            <!-- 10. Privacy -->
-            <section id="section-10" class="section-block">
+            <!-- Section 10 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">10</div>
                     <div>
-                        <h3 class="section-heading-title">Privacy</h3>
+                        <h2 class="section-heading-title">Indemnification</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    Your use of the Services is governed by our <strong>Privacy Policy</strong>. By using the Services,
-                    you expressly consent to the collection, processing, and use of your personal data in accordance
-                    with that policy.
-                </p>
+                <p class="section-text">You agree to indemnify and hold harmless Campushala, its officers, employees,
+                    and affiliates from any claims, damages, liabilities, and expenses (including reasonable legal fees)
+                    arising out of your violation of these Terms or your misuse of the Website or Services.</p>
             </section>
 
-            <!-- 11. Limitation of Liability -->
-            <section id="section-11" class="section-block">
+            <!-- Section 11 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">11</div>
                     <div>
-                        <h3 class="section-heading-title">Limitation of Liability</h3>
+                        <h2 class="section-heading-title">Privacy</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    To the fullest extent permitted by applicable law, the University shall not be liable for any
-                    indirect, incidental, special, or consequential damages arising from or in connection with your use
-                    of, or inability to use, the Services.
-                </p>
+                <p class="section-text">Your use of our Website and Services is also governed by our Privacy Policy,
+                    which describes how we collect, use, and protect your personal information. By using our Website,
+                    you consent to the practices described in our Privacy Policy.</p>
             </section>
 
-            <!-- 12. Termination -->
-            <section id="section-12" class="section-block">
+            <!-- Section 12 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">12</div>
                     <div>
-                        <h3 class="section-heading-title">Termination</h3>
+                        <h2 class="section-heading-title">Termination</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    The University reserves the right to suspend or permanently terminate your access to the Services at
-                    its sole discretion, without prior notice, upon violation of these Terms or for any conduct deemed
-                    harmful to the platform or its community.
-                </p>
+                <p class="section-text">We reserve the right to suspend or terminate your access to our Website or
+                    Services at our sole discretion, without prior notice, if we believe you have violated these Terms
+                    or engaged in fraudulent, abusive, or unlawful conduct.</p>
             </section>
 
-            <!-- 13. Changes to Terms -->
-            <section id="section-13" class="section-block">
+            <!-- Section 13 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">13</div>
                     <div>
-                        <h3 class="section-heading-title">Changes to Terms</h3>
+                        <h2 class="section-heading-title">Changes to These Terms</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    We may update or revise these Terms from time to time. Continued use of the Services following any
-                    such changes constitutes your acceptance of the revised Terms. We encourage you to review this page
-                    periodically.
-                </p>
+                <p class="section-text">We may update these Terms from time to time to reflect changes in our practices,
+                    services, or legal requirements. Any changes will be posted on this page with an updated "Last
+                    Updated" date. Your continued use of the Website after such changes constitutes your acceptance of
+                    the revised Terms.</p>
             </section>
 
-            <!-- 14. Governing Law -->
-            <section id="section-14" class="section-block">
+            <!-- Section 14 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">14</div>
                     <div>
-                        <h3 class="section-heading-title">Governing Law</h3>
+                        <h2 class="section-heading-title">Governing Law and Jurisdiction</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    These Terms shall be governed by and construed in accordance with the laws of the <strong>Republic
-                        of India</strong>. Any disputes arising hereunder shall be subject to the exclusive jurisdiction
-                    of the competent courts in India.
-                </p>
+                <p class="section-text">These Terms shall be governed by and construed in accordance with the laws of
+                    India. Any disputes arising out of or in connection with these Terms shall be subject to the
+                    exclusive jurisdiction of the courts located in Noida, Uttar Pradesh, India.</p>
             </section>
 
-            <!-- 15. Contact Information -->
-            <section id="section-15" class="section-block">
+            <!-- Section 15 -->
+            <section class="section-block">
                 <div class="section-header-wrap">
                     <div class="section-badge-icon fw-bold px-4 py-3">15</div>
                     <div>
-                        <h3 class="section-heading-title">Contact Information</h3>
+                        <h2 class="section-heading-title">Severability</h2>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    For any questions, concerns, or queries regarding these Terms, please reach out to our support team:
-                </p>
+                <p class="section-text">If any provision of these Terms is found to be invalid or unenforceable, the
+                    remaining provisions shall continue in full force and effect.</p>
+            </section>
+
+            <!-- Section 16 -->
+            <section class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">16</div>
+                    <div>
+                        <h2 class="section-heading-title">Contact Us</h2>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">If you have any questions or concerns about these Terms and Conditions, please
+                    contact us:</p>
                 <div class="quote-callout-box">
-                    <p><i class="fa-solid fa-phone me-2 text-primary"></i> <strong>Phone:</strong> <a
-                            href="tel:9711849719" class="text-primary">+91 9711849719</a></p>
+                    <p><strong>Campushala</strong></p>
+                    <p>📧 Email: <a href="mailto:manik.b@campushala.com"
+                            class="text-primary fw-bold">manik.b@campushala.com</a></p>
+                    <p>🌐 Website: <a href="https://campushala.com/"
+                            class="text-primary fw-bold">https://campushala.com/</a></p>
                 </div>
             </section>
 
@@ -731,15 +665,28 @@
                     class="btn btn-hero bg-seventh d-flex gap-2 text-tertiary fw-bold text-center topbar-text w-md-full justify-content-center">
                     TALK TO A COUNSELLOR
                 </a>
-                <a href="/au-online/#admission-form"
+                <a href="/au-online/index.html#admission-form"
                     class="btn btn-hero bg-tertiary d-flex gap-2 text-white fw-bold text-center topbar-text w-md-full justify-content-center ls-1 footer-btn-border">
                     CHECK ELIGIBILITY
                 </a>
             </div>
             <p class="font-plus-jakarta disclaimer-span text-white text-center mx-auto opacity-75">
-                <strong>Disclaimer:</strong> Universities Nations act as a marketing service partner only. Amity
-                University holds the right to request the change or removal of any non-relevant content. Images used are
-                for illustrative purposes and do not directly represent the respective colleges or universities.
+                <strong>Disclaimer:</strong> Campushala act
+                as a
+                marketing service
+                partner
+                only. Amity
+                University holds the
+                right to request the change
+                or removal of any non-relevant content. Images used are for illustrative purposes and do not directly
+                represent
+                the respective colleges or universities.
+            </p>
+            <div class="d-flex justify-content-center my-3 my-md-4">
+                <div style="width: 600px; height: 2px; background-color: #ffc107; border-radius: 2px;"></div>
+            </div>
+            <p class="font-plus-jakarta disclaimer-span text-white text-center mx-auto opacity-75">
+                <strong>Address:</strong> Ground Floor, C-95, C Block, Sector 2, Noida, Uttar Pradesh 201301
             </p>
         </div>
     </footer>
@@ -747,15 +694,13 @@
         <div
             class="container d-flex flex-column flex-md-row justify-content-between align-items-center footer-copyright-text text-muted">
             <div class="mb-2 mb-md-0">
-                © 2026 Universities Nation. All rights reserved.
+                © 2026 Campushala . All right reserved
             </div>
             <div class="d-flex align-items-center gap-2 my-1 my-md-0 mb-2 mb-md-0">
-                <a href="privacypolicy.html" target="_blank" rel="noopener noreferrer"
-                    class="text-muted  hover-primary text-decoration-none">Privacy
+                <a href="privacypolicy.html" class="text-muted hover-primary text-decoration-none">Privacy
                     Policy</a>
                 <span>|</span>
-                <a href="termandcondition.html" target="_blank" rel="noopener noreferrer"
-                    class="text-muted  hover-primary text-decoration-none">Terms &amp;
+                <a href="termandcondition.html" class="text-muted hover-primary text-decoration-none">Terms &amp;
                     Conditions</a>
             </div>
             <div>
@@ -763,12 +708,8 @@
             </div>
         </div>
     </div>
-    <!-- Floating / Sticky Call Button -->
-    <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
-        <i class="bi bi-telephone-fill"></i>
-    </a>
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

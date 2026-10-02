@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Amity University Online</title>
+    <title>Privacy Policy | Campushala</title>
     <link rel="icon" type="image/webp" href="images/favicon.webp">
     <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,22 +70,6 @@
             font-family: "Outfit", sans-serif;
         }
 
-        .ls-1 {
-            letter-spacing: 1px !important;
-        }
-
-        .ls-2 {
-            letter-spacing: 2px !important;
-        }
-
-        .font-900 {
-            font-weight: 900 !important;
-        }
-
-        .fw-bold {
-            font-weight: 700 !important;
-        }
-
         a {
             text-decoration: none;
             transition: var(--transition);
@@ -106,52 +90,7 @@
             margin: 0 auto;
         }
 
-        /* Helper Background & Text Utility Classes */
-        .bg-primary {
-            background-color: var(--primary-color) !important;
-        }
-
-        .bg-secondary {
-            background-color: var(--secondary-color) !important;
-        }
-
-        .bg-tertiary {
-            background-color: var(--tertiary-color) !important;
-        }
-
-        .bg-quaternary {
-            background-color: var(--quaternary-color) !important;
-        }
-
-        .bg-seventh {
-            background-color: var(--seventh-color) !important;
-        }
-
-        .bg-light-blue {
-            background-color: var(--light-blue-color) !important;
-        }
-
-        .text-primary {
-            color: var(--primary-color) !important;
-        }
-
-        .text-tertiary {
-            color: var(--tertiary-color) !important;
-        }
-
-        .text-quinary {
-            color: var(--quinary-color) !important;
-        }
-
-        .text-seventh {
-            color: var(--seventh-color) !important;
-        }
-
-        .text-tenth {
-            color: var(--tenth-color) !important;
-        }
-
-        /* Hero Banner Matching Screenshot */
+        /* Hero Banner */
         .hero-header {
             background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
             background-size: 24px 24px;
@@ -193,80 +132,21 @@
             letter-spacing: -0.5px;
         }
 
-        /* Table of Contents Box */
-        .toc-card {
-            background: #ffffff;
-            border-radius: 4px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--secondary-color);
-            padding: 2.25rem 2.5rem;
-            position: relative;
-            z-index: 10;
+        .hero-subtitle {
+            color: #ffffffd5;
+            font-family: "Outfit", serif;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
         }
 
-        .toc-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 1.5rem;
+        /* Content Sections */
+        .container-main {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
         }
 
-        .toc-icon-badge {
-            width: 28px;
-            height: 28px;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            border-radius: 2px;
-        }
-
-        .toc-title {
-            color: var(--primary-color);
-            font-family: "Outfit", sans-serif;
-            font-weight: 800;
-            font-size: 1.1rem;
-            letter-spacing: 1.5px;
-            margin: 0;
-            white-space: nowrap;
-        }
-
-        .toc-divider {
-            flex-grow: 1;
-            height: 1px;
-            background-color: var(--secondary-color);
-        }
-
-        .toc-grid-item {
-            padding: 0.75rem 0.25rem;
-            border-bottom: 1px solid var(--secondary-color);
-        }
-
-        .toc-link {
-            color: var(--primary-color);
-            font-family: "Plus Jakarta Sans", sans-serif;
-            font-size: 0.925rem;
-            font-weight: 600;
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-        }
-
-        .toc-link .toc-num {
-            color: var(--seventh-color);
-            font-family: "Outfit", sans-serif;
-            font-weight: 700;
-            font-size: 0.85rem;
-        }
-
-        .toc-link:hover {
-            color: var(--blue-color);
-            transform: translateX(3px);
-        }
-
-        /* Content Sections Matching Screenshot */
         .section-block {
             margin-bottom: 3rem;
             scroll-margin-top: 20px;
@@ -316,7 +196,20 @@
             margin-bottom: 1rem;
         }
 
-        /* Callout Highlight Box */
+        .sub-heading {
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        /* Callout Box */
         .quote-callout-box {
             background-color: #F8FAF8;
             border: 1px solid var(--secondary-color);
@@ -333,6 +226,11 @@
             margin: 0;
         }
 
+        /* Lists */
+        .custom-bullet-list {
+            margin-bottom: 1rem;
+        }
+
         .custom-bullet-list li {
             position: relative;
             padding-left: 1.5rem;
@@ -343,7 +241,9 @@
 
         .custom-bullet-list li::before {
             content: "•";
-            padding-right: 10px;
+            position: absolute;
+            left: 0;
+            top: -2px;
             color: var(--primary-color);
             font-weight: bold;
             font-size: 1.2rem;
@@ -372,20 +272,20 @@
             }
 
             .custom-bullet-list li {
-                margin-bottom: 0px;
+                margin-bottom: 0.4rem;
             }
         }
     </style>
 </head>
 
 <body>
-    <nav class="bg-tertiary navbar-container  sticky-top">
+    <nav class="bg-tertiary navbar-container sticky-top">
         <div class="container p-3 ">
             <div class="d-flex align-items-center justify-content-center justify-content-md-between gap-2 gap-md-3">
 
                 <!-- Brand Logo -->
                 <div class="flex-shrink-0">
-                    <img src="images/image 1.webp" class="img-fluid aspect-ratio-17-6 navbar-logo" alt="Logo" />
+                    <img src="images/Campushala-logo.webp" class="img-fluid aspect-ratio-17-6 navbar-logo" alt="Logo" />
                 </div>
 
                 <!-- Action Buttons (Mobile bottom fixed wrapper) -->
@@ -415,6 +315,11 @@
             </div>
         </div>
     </nav>
+    <!-- Floating / Sticky Call Button -->
+    <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
+        <i class="bi bi-telephone-fill"></i>
+    </a>
+    <!-- Hero Header -->
     <section class="hero-header bg-tertiary">
         <div class="official-tag-wrap">
             <span class="official-tag-line"></span>
@@ -422,352 +327,282 @@
             <span class="official-tag-line"></span>
         </div>
         <h1 class="hero-title">Privacy Policy</h1>
+        <p class="hero-subtitle">Last Updated: September 30, 2026</p>
     </section>
 
+    <!-- Main Content -->
     <main class="container container-main">
         <div class="content-wrapper">
 
-            <!-- Table of Contents Card Section -->
-            <!-- <div class="toc-card">
-                <div class="toc-header">
-                    <div class="toc-icon-badge">
-                        <i class="fa-solid fa-list-ul"></i>
-                    </div>
-                    <h2 class="toc-title">TABLE OF CONTENTS</h2>
-                    <div class="toc-divider"></div>
-                </div>
+            <!-- Overview Box -->
+            <div class="mb-4">
+                <p class="mb-2"> ("Campushala," "we," "us," or "our") operates the website <a
+                        href="https://campushala.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-decoration-none text-primary">[https://campushala.com/]</a> and
+                    provides
+                    education
+                    counselling and admission-guidance services
+                    (collectively, the "Services"). This Privacy Policy explains how we collect, use, disclose, and
+                    protect information when you visit our Website or use our Services.
+                </p>
+                <p class="mb-2">By accessing or using our Website, you agree to the terms of this Privacy Policy. If you
+                    do not agree
+                    with this policy, please do not use our Website or Services.
+                </p>
+            </div>
 
-                <div class="row row-cols-1 row-cols-md-3 g-0">
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-01" class="toc-link">
-                                <span class="toc-num">01</span> Introduction
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-02" class="toc-link">
-                                <span class="toc-num">02</span> Non-Personal Information
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-03" class="toc-link">
-                                <span class="toc-num">03</span> OTP Verification
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-04" class="toc-link">
-                                <span class="toc-num">04</span> Cookies
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-05" class="toc-link">
-                                <span class="toc-num">05</span> Information from Emails
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-06" class="toc-link">
-                                <span class="toc-num">06</span> Consent & Authorization
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-07" class="toc-link">
-                                <span class="toc-num">07</span> Interactive Forms
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-08" class="toc-link">
-                                <span class="toc-num">08</span> Links to External Sites
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item">
-                            <a href="#sec-09" class="toc-link">
-                                <span class="toc-num">09</span> User Authorization
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="toc-grid-item border-bottom-0">
-                            <a href="#sec-10" class="toc-link">
-                                <span class="toc-num">10</span> Internship / Job Opportunities
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- 01 Introduction -->
+            <!-- 01. Information We Collect -->
             <section id="sec-01" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        01
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">01</div>
                     <div>
-                        <h3 class="section-heading-title">Introduction</h3>
+                        <h3 class="section-heading-title">Information We Collect</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
+
+                <h4 class="sub-heading">1.1 Information You Provide to Us</h4>
+                <p class="section-text">When you fill out an enquiry form, request a callback, download a brochure, or
+                    contact us, we may collect:</p>
+                <ul class="custom-bullet-list">
+                    <li>Full name</li>
+                    <li>Email address</li>
+                    <li>Phone / WhatsApp number</li>
+                    <li>City / location</li>
+                    <li>Educational qualification and course/program of interest</li>
+                    <li>Any other information you voluntarily provide in forms or during counselling calls</li>
+                </ul>
+
+                <h4 class="sub-heading">1.2 Information Collected Automatically</h4>
+                <p class="section-text">When you visit our Website, certain information may be collected automatically
+                    through cookies and similar technologies, including:</p>
+                <ul class="custom-bullet-list">
+                    <li>IP address</li>
+                    <li>Browser type and version</li>
+                    <li>Device type and operating system</li>
+                    <li>Pages visited, time spent on pages, and referring URLs</li>
+                    <li>Approximate geographic location (based on IP address)</li>
+                </ul>
+
+                <h4 class="sub-heading">1.3 Information from Third Parties</h4>
                 <p class="section-text">
-                    Thank you for visiting the <strong>Amity University Online</strong> website. We are committed to
-                    protecting your privacy. As a general rule, we do not collect any personal information about you
-                    unless you voluntarily provide it.
+                    We may receive information about you from third-party advertising platforms (such as Google Ads and
+                    Meta/Facebook Ads) when you interact with our ads, in accordance with those platforms' own privacy
+                    policies.
                 </p>
-                <div class="quote-callout-box">
-                    <p>We do <strong>not</strong> sell, share, or transfer your personal information to third parties.
-                    </p>
-                </div>
             </section>
 
-            <!-- 02 Non-Personal Information We Collect -->
+            <!-- 02. How We Use Your Information -->
             <section id="sec-02" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        02
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">02</div>
                     <div>
-                        <h3 class="section-heading-title">Non-Personal Information We Collect</h3>
+                        <h3 class="section-heading-title">How We Use Your Information</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    If you browse our website without submitting any personal details, our system may automatically
-                    collect certain general information about your visit.
-                </p>
-                <p class="section-text mb-2">During your visit, we may record:</p>
+                <p class="section-text">We use the information we collect to:</p>
                 <ul class="custom-bullet-list">
-                    <li>Your internet domain, such as xyz.com, xyz.net, or yourcollege.edu</li>
-                    <li>The type and version of your web browser</li>
-                    <li>Your operating system, such as Windows, macOS, or Unix</li>
-                    <li>The date and time of your visit, along with the pages you access</li>
-                    <li>The website you visited prior to arriving at our site, where applicable</li>
+                    <li>Respond to your enquiries and provide counselling regarding courses, universities, and
+                        admissions</li>
+                    <li>Connect you with our partner universities/institutions for admission guidance</li>
+                    <li>Send you relevant information about courses, programs, and offers via email, phone, or WhatsApp
+                    </li>
+                    <li>Improve our Website, Services, and user experience</li>
+                    <li>Measure and improve the effectiveness of our advertising campaigns</li>
+                    <li>Comply with legal obligations and enforce our terms</li>
                 </ul>
-                <p class="section-text mt-3">
-                    This information is used solely for statistical and analytical purposes to improve the usability,
-                    functionality, and performance of our website. It does not personally identify you.
-                </p>
+
+                <div class="quote-callout-box">
+                    <p>We do <strong>not</strong> sell your personal information to third parties.</p>
+                </div>
             </section>
 
-            <!-- 03 OTP Verification for Payments -->
+            <!-- 03. Cookies and Tracking Technologies -->
             <section id="sec-03" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        03
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">03</div>
                     <div>
-                        <h3 class="section-heading-title">OTP Verification for Payments</h3>
+                        <h3 class="section-heading-title">Cookies and Tracking Technologies</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <p class="section-text">
-                    For secure transactions, we may use <strong>One-Time Password (OTP)</strong> authentication.
+                    Our Website uses cookies and similar tracking technologies to enhance user experience and analyze
+                    site traffic. This includes:
                 </p>
+                <ul class="custom-bullet-list">
+                    <li><strong>Google Analytics:</strong> To understand how visitors use our Website</li>
+                    <li><strong>Google Ads / Google Tag Manager:</strong> To measure ad performance and deliver relevant
+                        advertising, including remarketing</li>
+                    <li><strong>Meta (Facebook) Pixel:</strong> To measure and optimize advertising on
+                        Facebook/Instagram</li>
+                    <li><strong>Functional cookies:</strong> To remember your preferences and improve site functionality
+                    </li>
+                </ul>
                 <p class="section-text">
-                    When making a payment, you may receive an OTP via SMS on your registered mobile number to verify and
-                    complete the transaction securely.
+                    You can control or disable cookies through your browser settings. Please note that disabling cookies
+                    may affect the functionality of our Website.
+                </p>
+
+                <h4 class="sub-heading">Third-Party Advertising Disclosure</h4>
+                <p class="section-text">
+                    We use Google Ads and other third-party advertising services to promote our Services. These third
+                    parties may use cookies to serve ads based on your prior visits to our Website or other websites.
+                    You may opt out of personalized advertising by visiting Google's Ads Settings and the Network
+                    Advertising Initiative opt-out page.
                 </p>
             </section>
 
-            <!-- 04 Cookies -->
+            <!-- 04. How We Share Your Information -->
             <section id="sec-04" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        04
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">04</div>
                     <div>
-                        <h3 class="section-heading-title">Cookies</h3>
+                        <h3 class="section-heading-title">How We Share Your Information</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
+                <p class="section-text">We may share your information with:</p>
+                <ul class="custom-bullet-list">
+                    <li><strong>Partner universities/institutions:</strong> To facilitate your admission enquiry and
+                        process, with your consent</li>
+                    <li><strong>Service providers:</strong> Third parties who help us operate our Website, send
+                        communications, or process data (e.g., CRM providers, email/SMS/WhatsApp service providers),
+                        under confidentiality obligations</li>
+                    <li><strong>Legal authorities:</strong> Where required by law, regulation, legal process, or
+                        governmental request</li>
+                    <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or sale of
+                        assets, where your information may be transferred as part of that transaction</li>
+                </ul>
                 <p class="section-text">
-                    We use cookies on certain pages of our website to enhance your browsing experience.
+                    We do not share your personal information with unrelated third parties for their own marketing
+                    purposes without your consent.
                 </p>
-                <p class="section-text">
-                    Cookies are small files stored on your device that help maintain your session while navigating the
-                    website. These cookies do not collect personal information.
-                </p>
-                <div class="quote-callout-box">
-                    <p>You may choose to accept or decline cookies through your browser settings. For added privacy, we
-                        recommend closing your browser after completing your session.</p>
-                </div>
             </section>
 
-            <!-- 05 Information from Emails -->
+            <!-- 05. Data Security -->
             <section id="sec-05" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        05
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">05</div>
                     <div>
-                        <h3 class="section-heading-title">Information from Emails</h3>
+                        <h3 class="section-heading-title">Data Security</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <p class="section-text">
-                    If you contact us via email, we may use the information you provide, including your email address,
-                    to respond to your inquiry.
+                    We implement reasonable administrative, technical, and physical safeguards designed to protect your
+                    personal information from unauthorized access, disclosure, alteration, or destruction. However, no
+                    method of transmission over the internet or electronic storage is 100% secure, and we cannot
+                    guarantee absolute security.
                 </p>
-                <div class="quote-callout-box">
-                    <p>Please note that email communication may not always be secure. Avoid sharing sensitive
-                        information unnecessarily through email.</p>
-                </div>
             </section>
 
-            <!-- 06 Consent & Authorization -->
+            <!-- 06. Data Retention -->
             <section id="sec-06" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        06
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">06</div>
                     <div>
-                        <h3 class="section-heading-title">Consent & Authorization</h3>
+                        <h3 class="section-heading-title">Data Retention</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <p class="section-text">
-                    By registering with <strong>Amity University Online</strong>, you authorize us and our associates to
-                    contact you via <strong>email, SMS, WhatsApp, or phone calls</strong> between <strong>9:00 a.m. and
-                        9:00 p.m.</strong> regarding updates, services, programs, courses, and related information.
+                    We retain your personal information only for as long as necessary to fulfil the purposes for which
+                    it was collected, including to provide our Services, comply with legal obligations, resolve
+                    disputes, and enforce our agreements.
                 </p>
-                <div class="quote-callout-box">
-                    <p>This consent applies even if your number is registered under DND / DNDC / NCPR services and
-                        remains valid until your account is deactivated.</p>
-                </div>
             </section>
 
-            <!-- 07 Information Gathered Through Interactive Forms -->
+            <!-- 07. Your Rights and Choices -->
             <section id="sec-07" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        07
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">07</div>
                     <div>
-                        <h3 class="section-heading-title">Information Gathered Through Interactive Forms</h3>
+                        <h3 class="section-heading-title">Your Rights and Choices</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
-                <p class="section-text">
-                    Certain pages of our website may contain interactive forms that allow you to voluntarily provide
-                    personal information such as your name, email address, mobile number, or other relevant details.
-                </p>
-                <p class="section-text mb-2">This may occur when you:</p>
+                <p class="section-text">Depending on your location, you may have the right to:</p>
                 <ul class="custom-bullet-list">
-                    <li>Register for counselling sessions, tests, quizzes, seminars, workshops, or training programs
-                        offered by Amity Online</li>
-                    <li>Download admission forms or related documents</li>
-                    <li>Submit an enquiry regarding a program or course</li>
-                    <li>Request information about admissions or academic offerings</li>
+                    <li>Access the personal information we hold about you</li>
+                    <li>Request correction of inaccurate or incomplete information</li>
+                    <li>Request deletion of your personal information</li>
+                    <li>Withdraw consent for marketing communications at any time (via the unsubscribe link in emails,
+                        or by replying "STOP" to SMS/WhatsApp messages, or by contacting us directly)</li>
+                    <li>Object to or restrict certain processing of your information</li>
                 </ul>
-                <p class="section-text mt-3">
-                    The information you provide through these forms is used for its intended purpose and handled in
-                    accordance with our applicable privacy practices.
-                </p>
             </section>
 
-            <!-- 08 Links to External Sites and Partners -->
+            <!-- 08. Children's Privacy -->
             <section id="sec-08" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        08
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">08</div>
                     <div>
-                        <h3 class="section-heading-title">Links to External Sites and Partners</h3>
+                        <h3 class="section-heading-title">Children's Privacy</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <p class="section-text">
-                    This Privacy Policy outlines the privacy practices applicable to the <strong>Amity Online
-                        website</strong>. However, our website may contain links to third-party websites or platforms.
-                </p>
-                <p class="section-text">
-                    Once you leave the Amity Online website, you may be accessing platforms that are <strong>not under
-                        our control</strong>.
-                </p>
-                <div class="quote-callout-box">
-                    <p>External websites may use their own cookies, collect data, or request personal information. The
-                        privacy practices described in this policy do not apply to such third-party websites.</p>
-                </div>
-                <p class="section-text">
-                    We recommend reviewing the privacy policy of any external website you visit, particularly before
-                    sharing personal information.
+                    Our Website and Services are not directed at children under the age of 18. We do not knowingly
+                    collect personal information from children. If we become aware that we have inadvertently collected
+                    personal information from a child, we will take steps to delete it promptly.
                 </p>
             </section>
 
-            <!-- 09 User Authorization -->
+            <!-- 09. Third-Party Links -->
             <section id="sec-09" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        09
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">09</div>
                     <div>
-                        <h3 class="section-heading-title">User Authorization</h3>
+                        <h3 class="section-heading-title">Third-Party Links</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <p class="section-text">
-                    By using <strong>Amity University Online</strong> services and/or registering on the platform, you
-                    consent to being contacted by Amity University Online, including its representatives, affiliates,
-                    and business partners, through:
+                    Our Website may contain links to third-party websites, including partner university websites, social
+                    media platforms, and other resources. We are not responsible for the privacy practices or content of
+                    these third-party sites. We encourage you to review the privacy policies of any third-party sites
+                    you visit.
                 </p>
-                <ul class="custom-bullet-list">
-                    <li>Email</li>
-                    <li>Phone calls</li>
-                    <li>SMS</li>
-                    <li>WhatsApp</li>
-                </ul>
-                <p class="section-text mt-2">
-                    Such communications may relate to the programs or courses you have selected, admission-related
-                    updates, or relevant information about them.
-                </p>
-                <div class="quote-callout-box">
-                    <p>You acknowledge and agree that such communication may occur even if your contact details are
-                        registered under DND, DNC, or NCPR services. This consent will remain valid until your account
-                        is deactivated, either by you or by us.</p>
-                </div>
             </section>
 
-            <!-- 10 Internship / Job Opportunities -->
+            <!-- 10. Changes to This Privacy Policy -->
             <section id="sec-10" class="section-block">
                 <div class="section-header-wrap">
-                    <div class="section-badge-icon fw-bold px-4 py-3">
-                        10
-                    </div>
+                    <div class="section-badge-icon fw-bold px-4 py-3">10</div>
                     <div>
-                        <h3 class="section-heading-title">Internship / Job Opportunities</h3>
+                        <h3 class="section-heading-title">Changes to This Privacy Policy</h3>
                         <div class="title-underline"></div>
                     </div>
                 </div>
                 <p class="section-text">
-                    Eligibility for internships or job opportunities will be determined based on <strong>merit</strong>
-                    and evaluated on a <strong>case-by-case basis</strong>.
-                </p>
-                <p class="section-text">
-                    Participation in or eligibility for any internship or job opportunity is subject to the applicable
-                    requirements, criteria, and terms of the respective opportunity.
+                    We may update this Privacy Policy from time to time to reflect changes in our practices, technology,
+                    legal requirements, or other factors. We will post the revised policy on this page with an updated
+                    "Last Updated" date. We encourage you to review this policy periodically.
                 </p>
             </section>
 
-            <!-- Privacy Commitment Conclusion -->
-            <section class="quote-callout-box my-5">
-                <h5 class="font-Outfit fw-bold text-primary mb-2">Privacy Commitment</h5>
-                <p class="fw-normal">
-                    We value your trust and are committed to handling the information you provide responsibly and in
-                    accordance with applicable privacy requirements.
+            <!-- 11. Contact Us -->
+            <section id="sec-11" class="section-block">
+                <div class="section-header-wrap">
+                    <div class="section-badge-icon fw-bold px-4 py-3">11</div>
+                    <div>
+                        <h3 class="section-heading-title">Contact Us</h3>
+                        <div class="title-underline"></div>
+                    </div>
+                </div>
+                <p class="section-text">
+                    If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your
+                    personal information, please contact us at:
                 </p>
+                <div class="quote-callout-box">
+                    <p><strong>Campushala</strong></p>
+                    <p>📧 Email: <a href="mailto:manik.b@campushala.com"
+                            class="text-primary fw-bold">manik.b@campushala.com</a></p>
+                    <p>🌐 Website: <a href="https://campushala.com/"
+                            class="text-primary fw-bold">https://campushala.com/</a></p>
+                </div>
             </section>
 
         </div>
@@ -801,13 +636,13 @@
                     class="btn btn-hero bg-seventh d-flex gap-2 text-tertiary fw-bold text-center topbar-text w-md-full justify-content-center">
                     TALK TO A COUNSELLOR
                 </a>
-                <a href="/au-online/#admission-form"
+                <a href="/au-online/index.html#admission-form"
                     class="btn btn-hero bg-tertiary d-flex gap-2 text-white fw-bold text-center topbar-text w-md-full justify-content-center ls-1 footer-btn-border">
                     CHECK ELIGIBILITY
                 </a>
             </div>
             <p class="font-plus-jakarta disclaimer-span text-white text-center mx-auto opacity-75">
-                <strong>Disclaimer:</strong> Universities Nations act
+                <strong>Disclaimer:</strong> Campushala act
                 as a
                 marketing service
                 partner
@@ -818,21 +653,25 @@
                 represent
                 the respective colleges or universities.
             </p>
+            <div class="d-flex justify-content-center my-3 my-md-4">
+                <div style="width: 600px; height: 2px; background-color: #ffc107; border-radius: 2px;"></div>
+            </div>
+            <p class="font-plus-jakarta disclaimer-span text-white text-center mx-auto opacity-75">
+                <strong>Address:</strong> Ground Floor, C-95, C Block, Sector 2, Noida, Uttar Pradesh 201301
+            </p>
         </div>
     </footer>
     <div class="bg-white text-secondary py-3 border-top mb-5 mb-md-0">
         <div
             class="container d-flex flex-column flex-md-row justify-content-between align-items-center footer-copyright-text text-muted">
             <div class="mb-2 mb-md-0">
-                © 2026 Universities Nation. All rights reserved.
+                © 2026 Campushala . All right reserved
             </div>
             <div class="d-flex align-items-center gap-2 my-1 my-md-0 mb-2 mb-md-0">
-                <a href="privacypolicy.html" target="_blank" rel="noopener noreferrer"
-                    class="text-muted hover-primary text-decoration-none">Privacy
+                <a href="privacypolicy.html" class="text-muted hover-primary text-decoration-none">Privacy
                     Policy</a>
                 <span>|</span>
-                <a href="termandcondition.html" target="_blank" rel="noopener noreferrer"
-                    class="text-muted hover-primary text-decoration-none">Terms &amp;
+                <a href="termandcondition.html" class="text-muted hover-primary text-decoration-none">Terms &amp;
                     Conditions</a>
             </div>
             <div>
@@ -840,11 +679,8 @@
             </div>
         </div>
     </div>
-    <!-- Floating / Sticky Call Button -->
-    <a href="tel:9711849719" class="sticky-call-btn d-md-flex d-none" aria-label="Call Us">
-        <i class="bi bi-telephone-fill"></i>
-    </a>
-    <!-- Bootstrap JS CDN -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

@@ -446,6 +446,11 @@ p {
   right: -10px;
 }
 
+.hero-subpara {
+  color: #62748E;
+  font-size: 10px;
+}
+
 .card-program {
   border-radius: 16px;
   border: 1px solid rgba(226, 232, 240, 0.90);
