@@ -144,8 +144,15 @@
               </div>
 
               <div class="field">
-                <label for="email" class="field__label">Email Address <span class="opt">(Optional)</span></label>
-                <input type="email" id="email" name="email" class="field__input" placeholder="parent@example.com" />
+                <label for="email" class="field__label">Email Address <span class="req">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="field__input"
+                  placeholder="parent@example.com"
+                  required
+                />
               </div>
 
               <button type="submit" class="btn-submit">
@@ -838,15 +845,36 @@
     <!-- ========== FORM (UI ONLY — validation, no submit/backend yet) ========== -->
     <script>
       (function () {
+        'use strict';
+
+        /* 1) PASTE YOUR APPS SCRIPT WEB APP URL HERE (ends with /exec) */
+        var SHEET_URL =
+          'https://script.google.com/macros/s/AKfycbz_bocn6Zpwxa6th-KdIZuXYybmIbdqIv9xTFXzaPMmTZwUk1jHHcrk1vct3YAUso5uJQ/exec';
+
+        /* 2) Page to open after a successful submit */
+        var THANK_YOU_URL = 'thankyou.html';
+
         var form = document.getElementById('counsellingForm');
         if (!form) return;
 
+        var btn = form.querySelector('.btn-submit');
+        var btnText = btn ? btn.querySelector('span') : null;
+        var btnLabel = btnText ? btnText.textContent : 'Submit Now';
+        var sending = false;
+
+        /* ---------- validation ---------- */
         function validateField(el) {
           var val = el.value.trim();
           var ok = true;
-          if (el.required && val === '') ok = false;
-          else if (el.type === 'email' && val !== '') ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
-          else if (el.name === 'mobile' && val !== '') ok = /^[0-9]{10}$/.test(val);
+
+          if (el.required && val === '') {
+            ok = false;
+          } else if (el.type === 'email' && val !== '') {
+            ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+          } else if (el.name === 'mobile' && val !== '') {
+            ok = /^[0-9]{10}$/.test(val);
+          }
+
           el.classList.toggle('is-invalid', !ok);
           return ok;
         }
@@ -855,21 +883,76 @@
           el.addEventListener('blur', function () {
             validateField(el);
           });
+
           el.addEventListener('input', function () {
             if (el.name === 'mobile') el.value = el.value.replace(/\D/g, '');
             if (el.classList.contains('is-invalid')) validateField(el);
           });
         });
 
+        /* ---------- small error message (only shown on network failure) ---------- */
+        var msg = null;
+
+        function showError(text) {
+          if (!msg) {
+            msg = document.createElement('p');
+            msg.setAttribute('role', 'alert');
+            msg.style.cssText = 'margin:10px 0 0;font-size:12px;line-height:1.4;color:#dc2626;text-align:center;';
+            btn.insertAdjacentElement('afterend', msg);
+          }
+          msg.textContent = text;
+        }
+
+        function clearError() {
+          if (msg) msg.textContent = '';
+        }
+
+        function setLoading(on) {
+          sending = on;
+          btn.disabled = on;
+          btn.style.opacity = on ? '0.75' : '';
+          btn.style.cursor = on ? 'not-allowed' : '';
+          if (btnText) btnText.textContent = on ? 'Submitting…' : btnLabel;
+        }
+
+        /* ---------- submit ---------- */
         form.addEventListener('submit', function (e) {
           e.preventDefault();
+          if (sending) return;
+
           var valid = true;
           form.querySelectorAll('[name]').forEach(function (el) {
             if (!validateField(el)) valid = false;
           });
           if (!valid) return;
-          // TODO: connect Google Sheet / backend here
-          console.log('Form is valid (no submit action yet)');
+
+          if (SHEET_URL.indexOf('PASTE_YOUR') === 0) {
+            showError('Form is not connected yet. Add the Web app URL in js/form-submit.js');
+            return;
+          }
+
+          clearError();
+          setLoading(true);
+
+          // order matches the sheet: Parent Name, Mobile No, Email, Page URL (+ Date added by the script)
+          var body = new URLSearchParams();
+          body.append('parentName', form.elements.parentName.value.trim());
+          body.append('mobile', form.elements.mobile.value.trim());
+          body.append('email', form.elements.email.value.trim());
+          body.append('pageUrl', window.location.href);
+
+          fetch(SHEET_URL, {
+            method: 'POST',
+            mode: 'no-cors', // Apps Script does not send CORS headers; response is opaque
+            body: body,
+          })
+            .then(function () {
+              window.location.href = THANK_YOU_URL;
+            })
+            .catch(function () {
+              setLoading(false);
+              showError('Something went wrong. Please check your internet connection and try again.');
+            });
         });
       })();
     </script>
