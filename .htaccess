@@ -1,7 +1,7 @@
 # Redirect root domain to du-online folder
 RewriteEngine On
 RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ /du-online/ [R=301,L]
+RewriteRule ^$ /dpu-online/ [R=301,L]
 
 # Remove .html extension from URLs
 RewriteCond %{REQUEST_FILENAME} !-f
