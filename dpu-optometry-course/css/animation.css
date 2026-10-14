@@ -1,0 +1,639 @@
+:root {
+  --rv-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================================
+   1. SCROLL REVEAL
+   ============================================================ */
+.rv {
+  opacity: 0;
+}
+
+.rv.is-in {
+  animation-duration: 0.9s;
+  animation-timing-function: var(--rv-ease);
+  animation-delay: var(--rv-delay, 0ms);
+  animation-fill-mode: both;
+}
+
+.rv-up.is-in {
+  animation-name: rv-up;
+}
+.rv-down.is-in {
+  animation-name: rv-down;
+}
+.rv-left.is-in {
+  animation-name: rv-left;
+}
+.rv-right.is-in {
+  animation-name: rv-right;
+}
+.rv-zoom.is-in {
+  animation-name: rv-zoom;
+  animation-duration: 0.8s;
+}
+.rv-fade.is-in {
+  animation-name: rv-fade;
+  animation-duration: 1s;
+}
+.rv-up-scale.is-in {
+  animation-name: rv-up-scale;
+  animation-duration: 1s;
+}
+.rv-up-blur.is-in {
+  animation-name: rv-up-blur;
+  animation-duration: 1s;
+}
+.rv-clip-left.is-in {
+  animation-name: rv-clip-left;
+  animation-duration: 1.2s;
+}
+.rv-clip-up.is-in {
+  animation-name: rv-clip-up;
+  animation-duration: 1s;
+}
+.rv-grow.is-in {
+  animation-name: rv-grow;
+  animation-duration: 0.9s;
+}
+.rv-grow-x.is-in {
+  animation-name: rv-grow-x;
+  animation-duration: 0.8s;
+}
+.rv-pop.is-in {
+  animation-name: rv-pop;
+  animation-duration: 0.7s;
+}
+
+/* transform origins for the grow animations */
+.rv-grow {
+  transform-origin: top left;
+}
+.rv-grow-x {
+  transform-origin: left center;
+}
+
+/* animation finished -> hand control back to your own CSS */
+.rv.is-in.rv-done {
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes rv-up {
+  from {
+    opacity: 0;
+    translate: 0 40px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes rv-down {
+  from {
+    opacity: 0;
+    translate: 0 -30px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes rv-left {
+  from {
+    opacity: 0;
+    translate: -50px 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes rv-right {
+  from {
+    opacity: 0;
+    translate: 50px 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes rv-zoom {
+  from {
+    opacity: 0;
+    scale: 0.82;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes rv-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rv-up-scale {
+  from {
+    opacity: 0;
+    translate: 0 40px;
+    scale: 0.96;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes rv-up-blur {
+  from {
+    opacity: 0;
+    translate: 0 28px;
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+    filter: blur(0);
+  }
+}
+
+@keyframes rv-clip-left {
+  from {
+    opacity: 1;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes rv-clip-up {
+  from {
+    opacity: 1;
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes rv-grow {
+  from {
+    opacity: 1;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes rv-grow-x {
+  from {
+    opacity: 1;
+    scale: 0 1;
+  }
+  to {
+    opacity: 1;
+    scale: 1 1;
+  }
+}
+
+@keyframes rv-pop {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+  }
+  55% {
+    opacity: 1;
+    scale: 1.14;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/* Admission-process dashed line "draws" itself */
+.rv-line::before {
+  clip-path: inset(0 100% 0 0);
+}
+
+.rv-line.is-in::before {
+  animation: rv-line 1.4s var(--rv-ease) var(--rv-delay, 0ms) both;
+}
+
+@keyframes rv-line {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* ============================================================
+   2. SMALL EXTRAS
+   ============================================================ */
+
+/* image wrapper (added by JS) — lets images zoom inside their rounded box */
+.img-zoom {
+  display: block;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-zoom img {
+  transition: transform 0.9s var(--rv-ease);
+}
+
+/* fixed side button: arrow gently nudges to invite a click */
+.side-enquiry svg {
+  animation: se-nudge 1.8s ease-in-out infinite;
+}
+
+.side-enquiry:hover svg {
+  animation-play-state: paused;
+}
+
+@keyframes se-nudge {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 3px;
+  }
+}
+
+/* ============================================================
+   3. BUTTONS — transitions (merged with your existing ones)
+   ============================================================ */
+.btn-dpu {
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.3s var(--rv-ease),
+    box-shadow 0.3s var(--rv-ease);
+}
+
+.btn-join {
+  transition:
+    background 0.25s ease,
+    transform 0.3s var(--rv-ease),
+    box-shadow 0.3s var(--rv-ease);
+}
+
+.btn-submit {
+  transition:
+    background 0.25s ease,
+    transform 0.3s var(--rv-ease),
+    box-shadow 0.3s var(--rv-ease);
+}
+
+.course-card__btn {
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.3s var(--rv-ease),
+    box-shadow 0.3s var(--rv-ease);
+}
+
+.careers-btn {
+  transition:
+    background 0.25s ease,
+    transform 0.3s var(--rv-ease),
+    box-shadow 0.3s var(--rv-ease);
+}
+
+/* arrow icons inside buttons */
+.btn-join svg,
+.btn-submit svg,
+.course-card__btn svg,
+.careers-btn svg,
+.site-footer__top svg {
+  transition: translate 0.3s var(--rv-ease);
+}
+
+/* shine sweep layer */
+.btn-dpu--solid,
+.btn-join,
+.btn-submit,
+.course-card__btn,
+.careers-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-dpu--solid::after,
+.btn-join::after,
+.btn-submit::after,
+.course-card__btn::after,
+.careers-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 25%, rgba(255, 255, 255, 0.3) 50%, transparent 75%);
+  translate: -130% 0;
+  transition: translate 0.8s var(--rv-ease);
+  pointer-events: none;
+}
+
+/* white button -> red-tinted shine so it is visible */
+.course-card__btn::after {
+  background: linear-gradient(110deg, transparent 25%, rgba(154, 40, 39, 0.16) 50%, transparent 75%);
+}
+
+/* ============================================================
+   4. CARDS — transitions (merged with your existing ones)
+   ============================================================ */
+.nirf-awards__img {
+  transition: transform 0.5s var(--rv-ease);
+}
+
+.nirf-banner {
+  transition:
+    transform 0.4s var(--rv-ease),
+    box-shadow 0.4s var(--rv-ease);
+}
+
+.course-info__box {
+  transition:
+    transform 0.4s var(--rv-ease),
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.course-info__icon {
+  transition: transform 0.4s var(--rv-ease);
+}
+
+.career-card {
+  transition: transform 0.5s var(--rv-ease);
+}
+
+.career-card__body {
+  transition:
+    box-shadow 0.5s var(--rv-ease),
+    border-color 0.4s ease;
+}
+
+.career-card__title {
+  transition: color 0.3s ease;
+}
+
+.infra-card {
+  transition:
+    transform 0.5s var(--rv-ease),
+    box-shadow 0.5s var(--rv-ease),
+    background 0.3s ease;
+}
+
+.infra-card__title {
+  transition: color 0.3s ease;
+}
+
+.recruiter-logo img {
+  transition: transform 0.4s var(--rv-ease);
+}
+
+.step-card {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.4s var(--rv-ease),
+    box-shadow 0.4s var(--rv-ease);
+}
+
+.step-card__num {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    scale 0.4s var(--rv-ease);
+}
+
+.faq-accordion .accordion-button::after {
+  transition:
+    background-color 0.2s,
+    scale 0.3s var(--rv-ease);
+}
+
+.cta-chips__item {
+  transition:
+    transform 0.3s var(--rv-ease),
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* ============================================================
+   5. HOVER EFFECTS (mouse devices only)
+   ============================================================ */
+@media (hover: hover) and (pointer: fine) {
+  /* ---------- Buttons ---------- */
+  .btn-dpu:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(154, 40, 39, 0.28);
+  }
+
+  .btn-join:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(154, 40, 39, 0.45);
+  }
+
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(154, 40, 39, 0.38);
+  }
+
+  .course-card__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
+  }
+
+  .careers-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(154, 40, 39, 0.38);
+  }
+
+  .btn-dpu--solid:hover::after,
+  .btn-join:hover::after,
+  .btn-submit:hover::after,
+  .course-card__btn:hover::after,
+  .careers-btn:hover::after {
+    translate: 130% 0;
+  }
+
+  .btn-join:hover svg,
+  .btn-submit:hover svg,
+  .course-card__btn:hover svg,
+  .careers-btn:hover svg {
+    translate: 4px 0;
+  }
+
+  .site-footer__top:hover svg {
+    translate: 0 -3px;
+  }
+
+  /* press feedback (declared after :hover so it wins) */
+  .btn-dpu:active,
+  .btn-join:active,
+  .btn-submit:active,
+  .course-card__btn:active,
+  .careers-btn:active,
+  .cta-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+
+  /* ---------- Form inputs ---------- */
+  .field__input:hover:not(:focus) {
+    border-color: #cbd5e1;
+  }
+
+  /* ---------- NIRF ---------- */
+  .nirf-awards__img:hover {
+    transform: scale(1.06);
+  }
+
+  .nirf-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(154, 40, 39, 0.28);
+  }
+
+  /* ---------- Course info boxes ---------- */
+  .course-info__box:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .course-info__box:hover .course-info__icon {
+    transform: scale(1.12);
+  }
+
+  /* ---------- Career cards ---------- */
+  .career-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .career-card:hover .career-card__body {
+    box-shadow: 0 18px 40px rgba(154, 40, 39, 0.18);
+    border-color: rgba(154, 40, 39, 0.35);
+  }
+
+  .career-card:hover .career-card__title {
+    color: var(--brand, #9a2827);
+  }
+
+  .career-card:hover .img-zoom img,
+  .infra-card:hover .img-zoom img {
+    transform: scale(1.07);
+  }
+
+  /* ---------- Recruiter logos ---------- */
+  .recruiter-logo:hover img {
+    transform: scale(1.08);
+  }
+
+  /* ---------- Infrastructure cards ---------- */
+  .infra-card:hover {
+    transform: translateY(-6px);
+    background: #fff;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+  }
+
+  .infra-card:hover .infra-card__title {
+    color: var(--brand, #9a2827);
+  }
+
+  /* ---------- Testimonial cards (red bg + white text already in style.css) ---------- */
+  .testi-card:hover {
+    transform: translateY(-6px);
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq-accordion .accordion-button:hover {
+    color: var(--brand, #9a2827);
+  }
+
+  .faq-accordion .accordion-button:hover::after {
+    scale: 1.1;
+  }
+
+  /* ---------- Admission steps (red bg + white text already in style.css) ---------- */
+  .step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(154, 40, 39, 0.28);
+  }
+
+  .step-card:hover .step-card__num {
+    scale: 1.1;
+  }
+
+  /* ---------- CTA chips ---------- */
+  .cta-chips__item:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* ============================================================
+   6. FOOTER — always visible (never hidden by scroll-reveal)
+   ============================================================ */
+.site-footer,
+.site-footer__inner,
+.site-footer * {
+  opacity: 1 !important;
+  animation: none !important;
+}
+
+/* ============================================================
+   8. REDUCED MOTION — show everything, no movement
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  .rv {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .rv-line::before,
+  .rv-line.is-in::before {
+    clip-path: none !important;
+    animation: none !important;
+  }
+
+  .side-enquiry svg {
+    animation: none;
+  }
+
+  .btn-dpu--solid::after,
+  .btn-join::after,
+  .btn-submit::after,
+  .course-card__btn::after,
+  .careers-btn::after {
+    display: none;
+  }
+
+  .img-zoom img {
+    transition: none;
+  }
+}

@@ -63,7 +63,8 @@ body {
 }
 
 /* ---------- Hero Content (left) ---------- */
-.hero-content {}
+.hero-content {
+}
 
 .hero-left-content {
   padding-top: 72px;
@@ -423,22 +424,24 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(90deg,
-      #fc945c 0%,
-      #fb8e5a 7.14%,
-      #fa8859 14.29%,
-      #f98257 21.43%,
-      #f77c55 28.57%,
-      #f67653 35.71%,
-      #f57052 42.86%,
-      #f36a50 50%,
-      #f2634e 57.14%,
-      #f05c4c 64.29%,
-      #ef554b 71.43%,
-      #ed4e49 78.57%,
-      #ec4647 85.71%,
-      #ea3e46 92.86%,
-      #e83444 100%);
+  background: linear-gradient(
+    90deg,
+    #fc945c 0%,
+    #fb8e5a 7.14%,
+    #fa8859 14.29%,
+    #f98257 21.43%,
+    #f77c55 28.57%,
+    #f67653 35.71%,
+    #f57052 42.86%,
+    #f36a50 50%,
+    #f2634e 57.14%,
+    #f05c4c 64.29%,
+    #ef554b 71.43%,
+    #ed4e49 78.57%,
+    #ec4647 85.71%,
+    #ea3e46 92.86%,
+    #e83444 100%
+  );
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -2px rgba(0, 0, 0, 0.1);
@@ -656,43 +659,47 @@ body {
 .marquee-section::before {
   top: 0;
   left: 0;
-  background: linear-gradient(90deg,
-      #f8fafc 0%,
-      rgba(248, 250, 252, 0.93) 7.14%,
-      rgba(248, 250, 252, 0.86) 14.29%,
-      rgba(248, 250, 252, 0.79) 21.43%,
-      rgba(248, 250, 252, 0.71) 28.57%,
-      rgba(248, 250, 252, 0.64) 35.71%,
-      rgba(248, 250, 252, 0.57) 42.86%,
-      rgba(248, 250, 252, 0.5) 50%,
-      rgba(248, 250, 252, 0.43) 57.14%,
-      rgba(248, 250, 252, 0.36) 64.29%,
-      rgba(248, 250, 252, 0.29) 71.43%,
-      rgba(248, 250, 252, 0.21) 78.57%,
-      rgba(248, 250, 252, 0.14) 85.71%,
-      rgba(248, 250, 252, 0.07) 92.86%,
-      rgba(248, 250, 252, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    #f8fafc 0%,
+    rgba(248, 250, 252, 0.93) 7.14%,
+    rgba(248, 250, 252, 0.86) 14.29%,
+    rgba(248, 250, 252, 0.79) 21.43%,
+    rgba(248, 250, 252, 0.71) 28.57%,
+    rgba(248, 250, 252, 0.64) 35.71%,
+    rgba(248, 250, 252, 0.57) 42.86%,
+    rgba(248, 250, 252, 0.5) 50%,
+    rgba(248, 250, 252, 0.43) 57.14%,
+    rgba(248, 250, 252, 0.36) 64.29%,
+    rgba(248, 250, 252, 0.29) 71.43%,
+    rgba(248, 250, 252, 0.21) 78.57%,
+    rgba(248, 250, 252, 0.14) 85.71%,
+    rgba(248, 250, 252, 0.07) 92.86%,
+    rgba(248, 250, 252, 0) 100%
+  );
 }
 
 .marquee-section::after {
   top: 0;
   right: 0;
-  background: linear-gradient(270deg,
-      #f8fafc 0%,
-      rgba(248, 250, 252, 0.93) 7.14%,
-      rgba(248, 250, 252, 0.86) 14.29%,
-      rgba(248, 250, 252, 0.79) 21.43%,
-      rgba(248, 250, 252, 0.71) 28.57%,
-      rgba(248, 250, 252, 0.64) 35.71%,
-      rgba(248, 250, 252, 0.57) 42.86%,
-      rgba(248, 250, 252, 0.5) 50%,
-      rgba(248, 250, 252, 0.43) 57.14%,
-      rgba(248, 250, 252, 0.36) 64.29%,
-      rgba(248, 250, 252, 0.29) 71.43%,
-      rgba(248, 250, 252, 0.21) 78.57%,
-      rgba(248, 250, 252, 0.14) 85.71%,
-      rgba(248, 250, 252, 0.07) 92.86%,
-      rgba(248, 250, 252, 0) 100%);
+  background: linear-gradient(
+    270deg,
+    #f8fafc 0%,
+    rgba(248, 250, 252, 0.93) 7.14%,
+    rgba(248, 250, 252, 0.86) 14.29%,
+    rgba(248, 250, 252, 0.79) 21.43%,
+    rgba(248, 250, 252, 0.71) 28.57%,
+    rgba(248, 250, 252, 0.64) 35.71%,
+    rgba(248, 250, 252, 0.57) 42.86%,
+    rgba(248, 250, 252, 0.5) 50%,
+    rgba(248, 250, 252, 0.43) 57.14%,
+    rgba(248, 250, 252, 0.36) 64.29%,
+    rgba(248, 250, 252, 0.29) 71.43%,
+    rgba(248, 250, 252, 0.21) 78.57%,
+    rgba(248, 250, 252, 0.14) 85.71%,
+    rgba(248, 250, 252, 0.07) 92.86%,
+    rgba(248, 250, 252, 0) 100%
+  );
 }
 
 .marquee-wrapper {
@@ -1329,7 +1336,7 @@ body {
     align-items: stretch;
   }
 
-  .programme-cards-row>[class*='col'] {
+  .programme-cards-row > [class*='col'] {
     display: flex;
     flex-direction: column;
   }
@@ -1683,6 +1690,7 @@ body {
     margin-bottom: 32px;
     overflow: visible;
     align-items: stretch;
+    padding-bottom: 8px;
   }
 
   /* Remove ALL span overrides so all 4 cards sit naturally in 2 cols */
@@ -1819,7 +1827,8 @@ body {
 }
 
 /* ---------- Swiper wrapper ---------- */
-.alumni-swiper-wrap {}
+.alumni-swiper-wrap {
+}
 
 /* ---------- Individual card ---------- */
 .alumni-card {
@@ -2148,13 +2157,15 @@ body {
   padding: 6px;
   /* space for gradient ring */
   border-radius: 50%;
-  background: conic-gradient(from 0deg,
-      #2cb5c0 0deg,
-      #7dc67e 72deg,
-      #fcc926 144deg,
-      #f5a623 216deg,
-      #ec3237 288deg,
-      #2cb5c0 360deg);
+  background: conic-gradient(
+    from 0deg,
+    #2cb5c0 0deg,
+    #7dc67e 72deg,
+    #fcc926 144deg,
+    #f5a623 216deg,
+    #ec3237 288deg,
+    #2cb5c0 360deg
+  );
   box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.12);
   transform: scale(1.5);
 }
@@ -3219,7 +3230,6 @@ body {
 
 /* Respect reduced-motion preference */
 @media (prefers-reduced-motion: reduce) {
-
   [data-animate],
   [data-animate].is-visible {
     opacity: 1 !important;
@@ -3251,7 +3261,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .admission-col-center[data-animate],
   .admission-col-center[data-animate].is-visible {
     opacity: 1;
@@ -3260,7 +3269,6 @@ body {
   }
 
   @media (max-width: 991.98px) {
-
     .admission-col-center[data-animate],
     .admission-col-center[data-animate].is-visible {
       transform: scale(1);
@@ -3530,7 +3538,6 @@ body {
 
 /* --- Prevent any section from causing horizontal scroll --- */
 @media (max-width: 767px) {
-
   .why-dpu-section,
   .programmes-section,
   .placement-section,

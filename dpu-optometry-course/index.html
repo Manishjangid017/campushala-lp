@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PBZR5ZBN');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DPU - Grow With Comfort Learning</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+  </head>
+
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PBZR5ZBN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <!-- ========== TOP BAR ========== -->
+    <div class="top-bar">
+      <div class="custom-container">
+        <p class="top-bar__text">ACCREDITED BY NAAC "A++"</p>
+      </div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+      <div class="custom-container site-header__inner justify-content-between">
+        <a class="site-brand" href="#" aria-label="DPU Home">
+          <img src="images/dpu-logo.webp" alt="DPU Logo" class="site-logo" />
+        </a>
+        <div class="site-header__actions">
+          <a href="#apply-now" class="btn-dpu btn-dpu--solid">Apply Now</a>
+          <a href="#apply-now" class="btn-dpu btn-dpu--outline d-lg-block d-none">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <span class="hero__edge-tab" aria-hidden="true"></span>
+
+      <div class="custom-container hero__inner">
+        <!-- Left content -->
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Affordable Optometry Course Where You Prepare For Top -
+            <span class="flip-wrap" id="flipWrap"
+              ><span class="flip-track" id="flipTrack"
+                ><span class="flip-item">"Abroad Opportunities"</span><span class="flip-item">"Medical Careers"</span
+                ><span class="flip-item">"Competitive Exams"</span
+                ><span class="flip-item" aria-hidden="true">"Abroad Opportunities"</span></span
+              ></span
+            >
+          </h1>
+
+          <p class="hero__desc">
+            The Bachelor of Optometry course at DY Patil prepares students to directly heal patients with diseases
+            attributed to the eye and visual system.
+          </p>
+
+          <a href="#apply-now" class="btn-join">
+            Join Today
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right form -->
+        <div class="hero__form-col">
+          <div class="enquiry-card" id="apply-now">
+            <div class="enquiry-card__head">
+              <h2 class="enquiry-card__title">Admissions Enquiry</h2>
+              <span class="enquiry-card__badge">2026-27</span>
+            </div>
+            <p class="enquiry-card__sub">Book a personalized campus tour or speak with our academic counselors.</p>
+
+            <form id="counsellingForm" novalidate>
+              <div class="field">
+                <label for="parentName" class="field__label">Parent / Guardian Name <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="parentName"
+                  name="parentName"
+                  class="field__input"
+                  placeholder="eg. Rajesh Kumar"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="mobile" class="field__label">Contact Phone <span class="req">*</span></label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  class="field__input"
+                  placeholder="+91 98765 43210"
+                  inputmode="numeric"
+                  maxlength="10"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email" class="field__label">Email Address <span class="opt">(Optional)</span></label>
+                <input type="email" id="email" name="email" class="field__input" placeholder="parent@example.com" />
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <span>Submit Now</span>
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </button>
+
+              <div class="enquiry-card__foot">
+                <span class="foot-item">
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                  Zero application fee
+                </span>
+                <span class="foot-dot" aria-hidden="true"></span>
+                <span class="foot-item">
+                  <svg
+                    width="11"
+                    height="11"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" />
+                  </svg>
+                  Instant callback
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 1 — NIRF RANKING ========== -->
+    <section class="nirf-section">
+      <div class="custom-container">
+        <img src="images/nirf-img-main.webp" alt="NIRF - National Institutional Ranking Framework" class="nirf-logo" />
+
+        <div class="nirf-row">
+          <div class="nirf-awards">
+            <img src="images/nirf-img-1.webp" alt="12th Medical Rank" class="nirf-awards__img" />
+            <img src="images/nirf-img-2.webp" alt="41st University Rank" class="nirf-awards__img" />
+            <img src="images/nirf-img-3.webp" alt="71st Overall Rank" class="nirf-awards__img" />
+          </div>
+
+          <div class="nirf-banner">
+            <h2 class="nirf-banner__title">DY Patil Is Ranked Nationally by NIRF</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 2 — COURSE ========== -->
+    <section class="course-section">
+      <div class="custom-container">
+        <div class="course-grid">
+          <!-- Left: image + red accent block -->
+          <div class="course-media">
+            <span class="course-media__accent" aria-hidden="true"></span>
+            <img
+              src="images/course-img.webp"
+              alt="Bachelor of Optometry student examining eyes"
+              class="course-media__img"
+            />
+          </div>
+
+          <!-- Right: red content card -->
+          <div class="course-card">
+            <p class="course-card__label">/ COURSE</p>
+            <h2 class="course-card__title">Bachelor of Optometry<br />(B. Optom.)</h2>
+
+            <ul class="course-card__list">
+              <li>Correction of refractive errors and prescription of glasses</li>
+              <li>Detection of eye-related systemic and neurological diseases</li>
+              <li>Fitting of contact lenses and low-vision aids</li>
+              <li>Diagnosis and treatment of eye movement disorders, including squint</li>
+              <li>Primary eye care in schools, communities, rural areas, and industries</li>
+              <li>Counselling patients with low vision, colour blindness, and hereditary vision defects</li>
+              <li>Assessment of eye health and timely referral to specialists</li>
+            </ul>
+
+            <a href="#apply-now" class="course-card__btn">
+              Apply Now
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+
+            <div class="course-info">
+              <div class="course-info__box">
+                <img src="images/CalendarDots.webp" alt="" class="course-info__icon" />
+                <p class="course-info__label">Duration:</p>
+                <p class="course-info__text">5 Years (4 years academic training + 1 year compulsory internship)</p>
+              </div>
+
+              <div class="course-info__box">
+                <img src="images/ListChecks.webp" alt="" class="course-info__icon" />
+                <p class="course-info__label">Eligibility:</p>
+                <p class="course-info__text">12th PCB/PCM with 50% marks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3 — WHAT CAN YOU DO AFTER OPTOMETRY ========== -->
+    <section class="careers-section">
+      <div class="custom-container">
+        <!-- Heading row -->
+        <div class="careers-head">
+          <div class="careers-head__text">
+            <p class="section-label">/ OPTOMETRY PLANS</p>
+            <h2 class="careers-head__title">What Can You Do After Optometry Degree</h2>
+          </div>
+
+          <a href="#apply-now" class="careers-btn">
+            Apply Now
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Cards -->
+        <div class="careers-grid">
+          <article class="career-card">
+            <img src="images/plans-img-1.webp" alt="Optical Business Owner" class="career-card__img" />
+            <div class="career-card__body">
+              <h3 class="career-card__title">Optical Business Owner</h3>
+              <p class="career-card__text">
+                Spacious and versatile with room to grow, work from home, or host comfortably.
+              </p>
+            </div>
+          </article>
+
+          <article class="career-card">
+            <img
+              src="images/plans-img-2.webp"
+              alt="Clinical Optometrist in Eye Institutions / Hospitals"
+              class="career-card__img"
+            />
+            <div class="career-card__body">
+              <h3 class="career-card__title">Clinical Optometrist in Eye Institutions / Hospitals</h3>
+              <p class="career-card__text">
+                Spacious and versatile with room to grow, work from home, or host comfortably.
+              </p>
+            </div>
+          </article>
+
+          <article class="career-card">
+            <img src="images/plans-img-3.webp" alt="Corporate Roles at MNCs" class="career-card__img" />
+            <div class="career-card__body">
+              <h3 class="career-card__title">Corporate Roles at MNCs</h3>
+              <p class="career-card__text">
+                Spacious and versatile with room to grow, work from home, or host comfortably.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 4 — RECRUITERS ========== -->
+    <section class="recruiters-section">
+      <div class="custom-container">
+        <div class="recruiters-head">
+          <p class="section-label section-label--light">/ RECRUITERS</p>
+          <h2 class="recruiters-head__title">Get Hired by the Top Organizations</h2>
+        </div>
+
+        <div class="recruiters-marquee-wrap">
+          <!-- Row 1 — scrolls LEFT -->
+          <div class="marquee-row marquee-row--left">
+            <div class="marquee-track">
+              <div class="recruiter-logo"><img src="images/logg-img-1.webp" alt="Lions International" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-2.webp" alt="Jupiter Hospital" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-3.webp" alt="Prime Retina Eye Care Centre" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-4.webp" alt="Lenskart" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-5.webp" alt="Manipal Hospitals" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-6.webp" alt="LV Prasad Eye Institute" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-7.webp" alt="Dr. Bendale's Eye Care" /></div>
+              <!-- duplicate for seamless loop -->
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-1.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-2.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-3.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-4.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-5.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-6.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-7.webp" alt="" /></div>
+            </div>
+          </div>
+
+          <!-- Row 2 — scrolls RIGHT -->
+          <div class="marquee-row marquee-row--right">
+            <div class="marquee-track">
+              <div class="recruiter-logo"><img src="images/logg-img-8.webp" alt="Surya Eye" /></div>
+              <div class="recruiter-logo">
+                <img src="images/logg-img-9.webp" alt="National Institute of Ophthalmology" />
+              </div>
+              <div class="recruiter-logo"><img src="images/logg-img-10.webp" alt="Vision Express" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-11.webp" alt="Dr. Agarwal's Eye Hospital" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-12.webp" alt="Poona Eye Care" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-13.webp" alt="Netrajyot Retina Care" /></div>
+              <div class="recruiter-logo"><img src="images/logg-img-14.webp" alt="Neoretina Eyecare Institute" /></div>
+              <!-- duplicate for seamless loop -->
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-8.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-9.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-10.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-11.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-12.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-13.webp" alt="" /></div>
+              <div class="recruiter-logo" aria-hidden="true"><img src="images/logg-img-14.webp" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 5 — INFRASTRUCTURE ========== -->
+    <section class="infra-section">
+      <!-- decorative dotted shape: sits on the bottom edge, half of it overlaps into the next section -->
+      <img src="images/shap-bg-2.webp" alt="" class="infra-dots" aria-hidden="true" />
+
+      <div class="custom-container">
+        <div class="infra-head">
+          <p class="infra-head__label">/ INFRASTRUCTURE</p>
+          <h2 class="infra-head__title">Work with Clinical &amp; Diagnostic Infrastructure</h2>
+        </div>
+
+        <div class="infra-grid">
+          <article class="infra-card">
+            <img src="images/infrastructure-img-1.webp" alt="Cornea & Contact Lens Lab" class="infra-card__img" />
+            <h3 class="infra-card__title">Cornea &amp; Contact Lens Lab</h3>
+          </article>
+
+          <article class="infra-card">
+            <img src="images/infrastructure-img-2.webp" alt="Pediatric & Binocular Clinic" class="infra-card__img" />
+            <h3 class="infra-card__title">Pediatric &amp; Binocular Clinic</h3>
+          </article>
+
+          <article class="infra-card">
+            <img src="images/infrastructure-img-3.webp" alt="Digital Computer & Vision Lab" class="infra-card__img" />
+            <h3 class="infra-card__title">Digital Computer &amp; Vision Lab</h3>
+          </article>
+
+          <article class="infra-card">
+            <img src="images/infrastructure-img-4.webp" alt="Optical Dispensing Workshop" class="infra-card__img" />
+            <h3 class="infra-card__title">Optical Dispensing Workshop</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 6 — TESTIMONIALS ========== -->
+    <section class="testi-section">
+      <div class="custom-container">
+        <div class="testi-head">
+          <p class="testi-head__label">/ TESTIMONIALS</p>
+          <h2 class="testi-head__title">Hear From The Students</h2>
+        </div>
+
+        <div class="testi-grid position-relative">
+          <img src="images/quotes-bg-left.webp" alt="" class="testi-quote testi-quote--left" aria-hidden="true" />
+          <img src="images/quotes-bg-right.webp" alt="" class="testi-quote testi-quote--right" aria-hidden="true" />
+          <article class="testi-card">
+            <p class="testi-card__text">
+              The B. Optom. course at DPU has helped me understand the importance of accurate eye examinations, patient
+              care, and communication. I look forward to learning more, gaining practical experience, and using these
+              skills to make a difference in people's lives.
+            </p>
+            <h3 class="testi-card__name">Manish Jain</h3>
+          </article>
+
+          <article class="testi-card">
+            <p class="testi-card__text">
+              The course covers a lot of interesting topics related to vision and eye care, and there is always
+              something new to learn. The guidance from faculty members helps me understand difficult concepts better.
+            </p>
+            <h3 class="testi-card__name">Rita Upadhyay</h3>
+          </article>
+
+          <article class="testi-card">
+            <p class="testi-card__text">
+              My experience with the B. Optom. course at Dr. DY Patil Institute of Optometry and Visual Sciences Pune
+              has been really good. I enjoy how the course combines theoretical knowledge with practical learning.
+            </p>
+            <h3 class="testi-card__name">Sumit Rao</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 7 — FAQs ========== -->
+    <section class="faq-section">
+      <!-- decorative dotted shape: bottom-right, half of it overlaps into the next section -->
+      <img src="images/shap-right.webp" alt="" class="faq-dots" aria-hidden="true" />
+
+      <div class="custom-container">
+        <div class="faq-head">
+          <p class="faq-head__label">/ FAQS</p>
+          <h2 class="faq-head__title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-media">
+            <img
+              src="images/faq-img.webp"
+              alt="Optometry student being examined with a slit lamp"
+              class="faq-media__img"
+            />
+          </div>
+
+          <div class="accordion faq-accordion" id="faqAccordion">
+            <!-- 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="faq-collapse-1"
+                >
+                  Is an Optometry Bachelor Degree holder a doctor?
+                </button>
+              </h3>
+              <div id="faq-collapse-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  No. A graduate of the B Optometry course cannot be considered a medical doctor. However, they still
+                  have a significant role as medical professionals.
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="faq-collapse-2"
+                >
+                  Does B. Optom. course need NEET?
+                </button>
+              </h3>
+              <div id="faq-collapse-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Admission is based on the eligibility criteria listed for the course. Please check the details above
+                  or speak to our counsellors.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-collapse-3"
+                  aria-expanded="false"
+                  aria-controls="faq-collapse-3"
+                >
+                  What is the highest salary for optometry?
+                </button>
+              </h3>
+              <div id="faq-collapse-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Salary depends on experience, location, specialisation and employer. Add your final salary details
+                  here.
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-collapse-4"
+                  aria-expanded="false"
+                  aria-controls="faq-collapse-4"
+                >
+                  Will optometry get replaced by AI?
+                </button>
+              </h3>
+              <div id="faq-collapse-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  AI can assist with screening and diagnostics, but hands-on patient care, clinical judgement and
+                  communication still need a trained optometrist.
+                </div>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-collapse-5"
+                  aria-expanded="false"
+                  aria-controls="faq-collapse-5"
+                >
+                  Does optometry have a future?
+                </button>
+              </h3>
+              <div id="faq-collapse-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. The growing need for vision correction and eye-health services keeps demand for optometry
+                  professionals strong.
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq-collapse-6"
+                  aria-expanded="false"
+                  aria-controls="faq-collapse-6"
+                >
+                  Is optometry worth it in 2026?
+                </button>
+              </h3>
+              <div id="faq-collapse-6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. It opens career paths in clinics, hospitals, optical retail, research and opportunities abroad.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 8 — ADMISSION PROCESS ========== -->
+    <section class="process-section">
+      <div class="custom-container">
+        <div class="process-head">
+          <p class="process-head__label">/ ADMISSION PROCESS</p>
+          <h2 class="process-head__title">Your Path to a Brighter Career</h2>
+        </div>
+        <div class="process-steps">
+          <article class="step-card">
+            <span class="step-card__num">1</span>
+            <h3 class="step-card__title">Fill the<br />application form.</h3>
+            <p class="step-card__text">Complete the online application form with your basic details.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">2</span>
+            <h3 class="step-card__title">Take the<br />AIAHCET examination.</h3>
+            <p class="step-card__text">Appear for the All India Allied Health Common Entrance Test (AIAHCET).</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">3</span>
+            <h3 class="step-card__title">Obtain results &amp; counselling schedule.</h3>
+            <p class="step-card__text">Check your results and follow the counselling schedule.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">4</span>
+            <h3 class="step-card__title">Submit the necessary documents at the college.</h3>
+            <p class="step-card__text">
+              Verify and submit the required documents during counselling/admission at the college.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-card__num">5</span>
+            <h3 class="step-card__title">Pay the fees &amp; enroll in the DPU optometry program.</h3>
+            <p class="step-card__text">Complete the fee payment to confirm your seat and begin your journey.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+      <div class="custom-container">
+        <div class="cta-banner">
+          <!-- decorative circle + dot (sits behind the photo) -->
+          <img src="images/shap-img-1.webp" alt="" class="cta-circle" aria-hidden="true" />
+
+          <!-- right photo -->
+          <img src="images/cta-img.webp" alt="Optometry student with a slit lamp" class="cta-photo order-2" />
+
+          <!-- left content -->
+          <div class="cta-content">
+            <span class="cta-pill">
+              <span class="cta-pill__icon" aria-hidden="true"></span>
+              Admissions Open 2026-27
+            </span>
+
+            <h2 class="cta-title">
+              Join Bachelor of Optometry<br />
+              And Build A Career in <span class="cta-title__accent">Visual Sciences</span>
+            </h2>
+
+            <ul class="cta-chips">
+              <li class="cta-chips__item">5 Years · 4 yrs academic + 1 yr internship</li>
+              <li class="cta-chips__item">12th PCB/PCM · 50% marks</li>
+            </ul>
+
+            <a href="#apply-now" class="cta-btn">
+              <span class="cta-btn__text">Apply Now</span>
+              <span class="cta-btn__arrow" aria-hidden="true">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="custom-container">
+        <div class="site-footer__inner">
+          <p class="site-footer__copy">
+            &copy; 2026 Dr. D. Y. Patil Institute of Optometry &amp; Visual Sciences. All rights reserved.
+          </p>
+
+          <div class="site-footer__links">
+            <span class="site-footer__credit">Design and developed by Mediagarh</span>
+            <span class="site-footer__divider" aria-hidden="true"></span>
+            <a href="#" class="site-footer__top">
+              Back to Top
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M12 19V5M6 11l6-6 6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== FIXED SIDE BUTTON ========== -->
+    <a href="#apply-now" class="side-enquiry" aria-label="Admissions Enquiry">
+      <span class="side-enquiry__text">Admissions Enquiry</span>
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 5v14M6 13l6 6 6-6" />
+      </svg>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/animation.js"></script>
+    <!-- ========== SLIDE-UP TEXT ANIMATION ========== -->
+    <script>
+      (function () {
+        var track = document.getElementById('flipTrack');
+        if (!track) return;
+
+        var items = track.children; // last item is a clone of the first (seamless loop)
+        var last = items.length - 1;
+        var idx = 0;
+        var SLIDE = 600; // ms, must match CSS transition
+        var FIRST_DELAY = 1000; // first text stays 1s
+        var HOLD = 2400; // each following text stays this long
+
+        function step() {
+          // box height + gap
+          return items[1].offsetTop - items[0].offsetTop;
+        }
+
+        function next() {
+          idx++;
+          track.style.transform = 'translateY(-' + idx * step() + 'px)';
+
+          setTimeout(function () {
+            if (idx === last) {
+              // jump back to the real first box without animation
+              track.style.transition = 'none';
+              idx = 0;
+              track.style.transform = 'translateY(0)';
+              void track.offsetHeight;
+              track.style.transition = '';
+            }
+            setTimeout(next, HOLD - SLIDE);
+          }, SLIDE);
+        }
+
+        window.addEventListener('resize', function () {
+          track.style.transition = 'none';
+          track.style.transform = 'translateY(-' + idx * step() + 'px)';
+          void track.offsetHeight;
+          track.style.transition = '';
+        });
+
+        setTimeout(next, FIRST_DELAY);
+      })();
+    </script>
+
+    <!-- ========== FORM (UI ONLY — validation, no submit/backend yet) ========== -->
+    <script>
+      (function () {
+        var form = document.getElementById('counsellingForm');
+        if (!form) return;
+
+        function validateField(el) {
+          var val = el.value.trim();
+          var ok = true;
+          if (el.required && val === '') ok = false;
+          else if (el.type === 'email' && val !== '') ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+          else if (el.name === 'mobile' && val !== '') ok = /^[0-9]{10}$/.test(val);
+          el.classList.toggle('is-invalid', !ok);
+          return ok;
+        }
+
+        form.querySelectorAll('[name]').forEach(function (el) {
+          el.addEventListener('blur', function () {
+            validateField(el);
+          });
+          el.addEventListener('input', function () {
+            if (el.name === 'mobile') el.value = el.value.replace(/\D/g, '');
+            if (el.classList.contains('is-invalid')) validateField(el);
+          });
+        });
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var valid = true;
+          form.querySelectorAll('[name]').forEach(function (el) {
+            if (!validateField(el)) valid = false;
+          });
+          if (!valid) return;
+          // TODO: connect Google Sheet / backend here
+          console.log('Form is valid (no submit action yet)');
+        });
+      })();
+    </script>
+
+    <!-- ========== SMOOTH SCROLL TO FORM + FOCUS ========== -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest('a[href="#apply-now"]');
+        if (!link) return;
+        e.preventDefault();
+        var target = document.getElementById('apply-now');
+        if (!target) return;
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(function () {
+          var first = document.getElementById('parentName');
+          if (first) first.focus({ preventScroll: true });
+        }, 600);
+      });
+    </script>
+  </body>
+</html>

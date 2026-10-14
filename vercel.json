@@ -3,6 +3,7 @@
     { "source": "/", "destination": "/dpu-onilne/", "permanent": false },
     { "source": "/dpu-online", "destination": "/dpu-online/", "permanent": false },
     { "source": "/au-online", "destination": "/au-online/", "permanent": false },
-    { "source": "/mu-online", "destination": "/mu-online/", "permanent": false }
+    { "source": "/mu-online", "destination": "/mu-online/", "permanent": false },
+    { "source": "/dpu-optometry-course", "destination": "/dpu-optometry-course/", "permanent": false }
   ]
 }
