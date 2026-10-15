@@ -1,0 +1,4 @@
+# X-Robots-Tag — prevent indexing of this landing page
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
