@@ -1930,6 +1930,20 @@ a {
 
 /* Large phones / small tablets: stack the cards */
 @media (max-width: 767.98px) {
+  /* Hero overlay — background image too bright on mobile, text unreadable */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.52);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+  }
   .careers-head {
     flex-direction: column;
     align-items: flex-start;
