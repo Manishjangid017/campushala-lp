@@ -1907,6 +1907,10 @@ a {
     font-size: 12.5px;
   }
 
+  .flip-wrap {
+    font-size: 0.75em;
+  }
+
   .process-section {
     padding: 28px 0 64px;
   }
