@@ -659,6 +659,87 @@ a {
 }
 
 /* ============================================================
+   FIXED BOTTOM WHATSAPP + CALL BUTTONS
+   ============================================================ */
+.float-contact {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.float-contact__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.float-contact__btn svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.float-contact__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* gentle pulse on the WhatsApp button */
+@keyframes float-contact-pulse {
+  0% {
+    box-shadow:
+      0 6px 18px rgba(0, 0, 0, 0.22),
+      0 0 0 0 rgba(37, 211, 102, 0.45);
+  }
+  70% {
+    box-shadow:
+      0 6px 18px rgba(0, 0, 0, 0.22),
+      0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow:
+      0 6px 18px rgba(0, 0, 0, 0.22),
+      0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.float-contact__btn--wa {
+  background: #25d366;
+  animation: float-contact-pulse 2.4s ease-out infinite;
+}
+
+.float-contact__btn--wa:hover {
+  background: #1ebe5a;
+  animation-play-state: paused;
+}
+
+.float-contact__btn--call {
+  background: var(--brand);
+}
+
+.float-contact__btn--call:hover {
+  background: var(--brand-dark);
+}
+
+.float-contact__btn:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 
@@ -669,6 +750,10 @@ a {
 
   .flip-track {
     transition: none;
+  }
+
+  .float-contact__btn--wa {
+    animation: none;
   }
 }
 
@@ -2100,12 +2185,28 @@ a {
 
   .side-enquiry {
     top: auto;
-    bottom: 90px;
+    bottom: 140px;
     padding: 14px 7px;
   }
 
   .side-enquiry__text {
     font-size: 9.5px;
+  }
+
+  .float-contact {
+    right: 14px;
+    bottom: 14px;
+    gap: 10px;
+  }
+
+  .float-contact__btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .float-contact__btn svg {
+    width: 24px;
+    height: 24px;
   }
   .nirf-logo {
     height: 62px;
