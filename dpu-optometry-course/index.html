@@ -155,29 +155,32 @@
 
             <form id="counsellingForm" novalidate>
               <div class="field">
-                <label for="parentName" class="field__label">Parent / Guardian Name <span class="req">*</span></label>
+                <label for="parentName" class="field__label">Student Name <span class="req">*</span></label>
                 <input
                   type="text"
                   id="parentName"
                   name="parentName"
                   class="field__input"
-                  placeholder="eg. Rajesh Kumar"
+                  placeholder="e.g. Aarav Sharma"
                   required
                 />
               </div>
 
               <div class="field">
-                <label for="mobile" class="field__label">Contact Phone <span class="req">*</span></label>
-                <input
-                  type="tel"
-                  id="mobile"
-                  name="mobile"
-                  class="field__input"
-                  placeholder="+91 98765 43210"
-                  inputmode="numeric"
-                  maxlength="10"
-                  required
-                />
+                <label for="mobile" class="field__label">WhatsApp Number <span class="req">*</span></label>
+                <div class="field__input-wrap">
+                  <img src="images/whatsapp-icon.svg" alt="" class="field__input-icon" aria-hidden="true" />
+                  <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    class="field__input field__input--icon"
+                    placeholder="WhatsApp no. (+91)"
+                    inputmode="numeric"
+                    maxlength="10"
+                    required
+                  />
+                </div>
               </div>
 
               <div class="field">

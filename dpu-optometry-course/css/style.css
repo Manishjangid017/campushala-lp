@@ -351,6 +351,25 @@ a {
   box-shadow: 0 0 0 3px rgba(154, 40, 39, 0.12);
 }
 
+.field__input-wrap {
+  position: relative;
+}
+
+.field__input-icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  translate: 0 -50%;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.field__input--icon {
+  padding-left: 34px;
+}
+
 .field__input.is-invalid {
   border-color: #dc2626;
   background: #fef2f2;
