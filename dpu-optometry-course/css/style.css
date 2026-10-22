@@ -429,6 +429,7 @@ a {
   color: rgba(255, 255, 255, 0.96);
   font-family: Poppins;
   font-size: 15px;
+  margin-bottom: 0px;
 }
 .enquiry-card__foot {
   display: flex;
@@ -671,7 +672,7 @@ a {
 
 .course-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.6fr 1fr;
   gap: 24px;
   align-items: stretch;
 }
@@ -685,8 +686,8 @@ a {
 
 .course-media__accent {
   position: absolute;
-  top: -34px;
-  left: -34px;
+  top: -24px;
+  left: -24px;
   width: 28%;
   height: 30%;
   border-radius: 8px;
@@ -713,14 +714,14 @@ a {
 /* ---------- Right: red card ---------- */
 .course-card {
   margin-top: 34px;
-  padding: 22px;
+  padding: 52px;
   background: var(--brand, #9a2827);
   border-radius: 12px;
   color: #fff;
 }
 
 .course-card__label {
-  margin: 0 0 22px;
+  margin: 0 0 12px;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -737,12 +738,18 @@ a {
   margin: 0 0 24px;
   padding-left: 18px;
   list-style: disc;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.95);
 }
+.course-card__list li {
+  margin-bottom: 8px;
+}
 
+.course-card__list li:nth-last-child(1) {
+  margin-bottom: 0px;
+}
 .course-card__list li::marker {
   font-size: 0.9em;
 }
@@ -2253,11 +2260,11 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
   .cta-section {
-    padding: 36px 0 24px;
+    padding: 36px 0 44px;
   }
 
   .cta-banner {
-    padding: 24px;
+    padding: 20px;
     min-height: 0;
     overflow: hidden;
     border-radius: 14px;
@@ -2739,6 +2746,7 @@ a {
 
   .optom-plans-media__img {
     max-height: 240px;
+    aspect-ratio: unset;
   }
 
   .optom-plans-item {
