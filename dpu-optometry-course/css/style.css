@@ -2282,6 +2282,7 @@ a {
     width: 100%;
     padding: 0px;
     margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .cta-banner .img-box {
@@ -2506,9 +2507,6 @@ a {
 
   .cta-banner {
     border-radius: 12px;
-  }
-
-  .cta-content {
   }
 
   .cta-banner .cta-photo {
