@@ -31,7 +31,7 @@
 
     /* ---------- COURSE ---------- */
     ['.course-media__accent', 'grow', 0],
-    ['.course-media__img', 'clip-left', 40],
+    ['.course-media__img', 'up', 40],
     ['.course-card', 'right', 100],
     ['.course-card__label', 'up', 380],
     ['.course-card__title', 'up', 460],
@@ -69,7 +69,7 @@
     /* ---------- FAQ ---------- */
     ['.faq-head__label', 'up', 0],
     ['.faq-head__title', 'up-blur', 90],
-    ['.faq-media__img', 'clip-left', 50],
+    ['.faq-media__img', 'up', 50],
     ['.faq-accordion .accordion-item', 'right', 250, 90],
     ['.faq-dots', 'fade', 0],
 
